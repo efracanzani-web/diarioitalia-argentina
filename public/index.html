@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Diario Italia Argentina</title>
+<meta name="description" content="Las noticias de la colectividad italiana en Argentina, cada día, en español e italiano.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#15202e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diario Italia Argentina">
+<meta property="og:title" content="Diario Italia Argentina">
+<meta property="og:description" content="Las noticias de la colectividad italiana en Argentina, cada día, en español e italiano.">
+<meta property="og:url" content="https://argentina.diarioitalia.org/">
+<meta property="og:image" content="https://argentina.diarioitalia.org/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<script>try{var t=localStorage.getItem("diario-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: masthead with tricolour rule, language bar, topic filter, lead story, then a two-column grid of dispatches grouped by topic. */
+:root {
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #15202e;
+  --muted: #5a6575;
+  --rule: #d9dde3;
+  --accent: #b3122b;
+  --green: #0b6b45;
+  --chip: #eceff3;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+    --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+  --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+/* Masthead */
+.tricolore { display: grid; grid-template-columns: 1fr 1fr 1fr; height: 5px; }
+.tricolore span:nth-child(1) { background: var(--green); }
+.tricolore span:nth-child(2) { background: var(--surface); border-block: 1px solid var(--rule); }
+.tricolore span:nth-child(3) { background: var(--accent); }
+header.mast { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.mast-inner { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; padding: 22px 0 16px; }
+.brand h1, .brand .h1 {
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1; margin: 0; letter-spacing: -0.01em;
+}
+.brand p { margin: 6px 0 0; color: var(--muted); font-size: 0.95rem; }
+.edition { text-align: right; font-size: 0.85rem; color: var(--muted); }
+.edition strong { display: block; color: var(--ink); font-weight: 600; font-size: 0.95rem; }
+.archive { display: flex; gap: 8px; align-items: center; }
+.archive select {
+  font: 500 0.85rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 6px 8px; cursor: pointer;
+}
+.archive select:hover { border-color: var(--ink); }
+
+.brand { display: flex; align-items: center; gap: 16px; }
+.logo { width: 60px; height: 60px; flex: none; color: var(--ink); }
+.wordmark { display: inline-flex; flex-direction: column; }
+.ar { display: block; font: 700 clamp(0.95rem, 2vw, 1.2rem)/1 var(--font-body); letter-spacing: 0.32em; text-transform: uppercase; color: var(--celeste); margin-top: 6px; }
+:root { --celeste: #2b6ea6; }
+:root[data-theme="dark"] { --celeste: #8cc4ee; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --celeste: #8cc4ee; } }
+.rule3 { display: grid; grid-template-columns: repeat(3, 1fr); height: 4px; margin-top: 8px; }
+.rule3 span:nth-child(1) { background: var(--green); }
+.rule3 span:nth-child(2) { background: #fff; box-shadow: inset 0 0 0 1px var(--rule); }
+.rule3 span:nth-child(3) { background: var(--accent); }
+.tools { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 8px; flex-wrap: wrap; }
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 40px; height: 36px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink); font: 500 0.8rem var(--font-body);
+}
+.iconbtn:hover { border-color: var(--ink); }
+.iconbtn svg { width: 17px; height: 17px; }
+
+/* Language bar */
+.langbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 14px; }
+.langrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+.pagenav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 0 0 14px; font-size: 0.88rem; font-weight: 600; }
+.pagenav a { color: var(--muted); text-decoration: none; }
+.pagenav a:hover, .pagenav a[aria-current="page"] { color: var(--accent); }
+.pagenav a[data-nav="home"] { display: none; }
+.footnav a { color: var(--ink); }
+@media (max-width: 640px) { .pagenav { padding-top: 0; font-size: 0.8rem; gap: 4px 14px; } .langbar { padding-bottom: 10px; } }
+.langbar button {
+  font: 600 0.8rem/1 var(--font-body); letter-spacing: 0.04em;
+  padding: 8px 10px; border-radius: 6px; cursor: pointer;
+  background: transparent; color: var(--muted); border: 1px solid var(--rule);
+}
+.langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.langbar button:hover { border-color: var(--ink); color: var(--ink); }
+.langbar button[aria-pressed="true"]:hover { color: var(--paper); }
+
+/* Topic filter */
+nav.topics { position: sticky; top: 0; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.filters { display: grid; gap: 2px; padding-block: 6px; }
+.topic-row { display: flex; gap: 8px; overflow-x: auto; padding: 6px 0; scrollbar-width: thin; align-items: center; }
+.row-label { flex: none; width: 68px; font: 600 0.72rem/1 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.topic-row button {
+  flex: none; font: 500 0.85rem/1 var(--font-body); padding: 8px 12px; border-radius: 999px;
+  border: 1px solid transparent; background: var(--chip); color: var(--ink); cursor: pointer;
+}
+.topic-row button .n { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 4px; }
+.topic-row button[aria-pressed="true"] { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+
+main.wrap { padding-block: 28px 48px; display: grid; gap: 36px; }
+
+/* Top: lead + in breve */
+.top { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.brief h2 { font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin: 4px 0 6px; }
+.brief ol { list-style: none; margin: 0; padding: 0; }
+.brief li { border-top: 1px solid var(--rule); padding: 12px 0; display: grid; gap: 5px; }
+.brief a { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; line-height: 1.25; text-decoration: none; color: var(--ink); }
+.brief a:hover { color: var(--accent); }
+.where { display: inline-flex; align-items: center; gap: 6px; }
+.flag { width: 18px; height: 12px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px var(--rule); display: inline-block; }
+.kind { font: 600 0.68rem/1 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; }
+.kind-comunita { color: #0b6b45; background: #e5f2eb; }
+.kind-istituzionale { color: #1d4f91; background: #e6edf8; }
+.kind-agenzia { color: #4f5a69; background: #eceff3; }
+:root[data-theme="dark"] .kind-comunita { color: #7fdcb0; background: #163a2b; }
+:root[data-theme="dark"] .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+:root[data-theme="dark"] .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .kind-comunita { color: #7fdcb0; background: #163a2b; }
+  :root:not([data-theme="light"]) .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+  :root:not([data-theme="light"]) .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+}
+.actions { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+.actions .read { margin-right: auto; }
+.empty { color: var(--muted); }
+
+/* Lead */
+.lead {
+  display: grid; gap: 14px;
+  background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--accent);
+  padding: 26px; border-radius: 4px;
+}
+.lead h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  line-height: 1.15; margin: 8px 0 0; text-wrap: balance;
+}
+.lead .summary { font-size: 1.05rem; margin: 0; max-width: 62ch; }
+.lead-side { display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+
+/* Sections */
+.section h3 {
+  display: flex; align-items: baseline; gap: 10px;
+  font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--accent); margin: 0 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--ink);
+}
+.section h3 .count { color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+[id^="n-"] { scroll-margin-top: 130px; }
+article.item { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; align-content: start; }
+article.item h4 {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.22;
+  margin: 0; text-wrap: balance;
+}
+article.item p { margin: 0; max-width: 65ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 0.8rem; color: var(--muted); }
+.meta .src { font-weight: 600; color: var(--ink); }
+.meta .sep { opacity: 0.5; }
+.read {
+  justify-self: start; display: inline-flex; gap: 6px; align-items: center;
+  font-weight: 600; font-size: 0.88rem; color: var(--accent); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.read:hover { border-bottom-color: var(--accent); }
+
+footer { border-top: 1px solid var(--rule); background: var(--surface); }
+.foot { padding: 22px 0 32px; display: grid; grid-template-columns: 2fr 1fr; gap: 24px; font-size: 0.88rem; color: var(--muted); }
+.foot p { margin: 0 0 8px; max-width: 70ch; }
+.foot strong { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .lead { padding: 20px; }
+  .top { grid-template-columns: 1fr; }
+  .logo { width: 46px; height: 46px; }
+  .row-label { width: auto; }
+  .grid { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+  .edition { text-align: left; }
+  .archive, .tools { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .read, .iconbtn, .langbar button, .topic-row button { transition: color .15s, background-color .15s, border-color .15s; }
+}
+</style>
+</head>
+<body>
+<div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-inner">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20.5" fill="none" stroke="currentColor" stroke-width="3.5"/><ellipse cx="24" cy="24" rx="8" ry="20.5" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="3.5" y="20" width="13.7" height="8" fill="#0b6b45"/><rect x="17.2" y="20" width="13.6" height="8" fill="#fff" stroke="#9aa3ae" stroke-width="0.8"/><rect x="30.8" y="20" width="13.7" height="8" fill="#b3122b"/></svg>
+        <div>
+          <span class="wordmark"><h1>Diario Italia<span class="ar">Argentina</span></h1><span class="rule3" aria-hidden="true"><span></span><span></span><span></span></span></span>
+          <p id="tagline">Las noticias de la colectividad italiana en Argentina, cada día</p>
+        </div>
+      </div>
+      <div class="edition"><strong id="edition-date"></strong><span id="edition-note"></span>
+        <div class="tools">
+          <label class="archive" for="archive"><span id="archive-label">Ediciones anteriores</span>
+            <select id="archive"></select></label>
+          <button type="button" class="iconbtn" id="theme" aria-label="Tema"></button>
+        </div></div>
+    </div>
+    <div class="langrow"><div class="langbar" role="group" aria-label="Idioma / Lingua" id="langbar"></div>
+      <nav class="pagenav" id="pagenav" aria-label="Diario Italia Argentina"><a href="/chi-siamo" data-nav="chi-siamo">Quiénes somos</a><a href="/fonti" data-nav="fonti">Fuentes</a><a href="/segnala" data-nav="segnala">Enviar una noticia</a></nav></div>
+  </div>
+</header>
+<nav class="topics" aria-label="Filtri" id="filters">
+  <div class="wrap filters"><div class="topic-row" id="regions"></div><div class="topic-row" id="topics"></div></div>
+</nav>
+<main class="wrap" id="main">
+  <p id="loading">Cargando…</p>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div>
+      <p id="about"></p>
+      <p id="rights"></p>
+    </div>
+    <div>
+      <p><strong id="sources-label"></strong></p>
+      <p id="sources-count"></p>
+      <p><strong id="contact-label"></strong></p>
+      <p><a href="mailto:info@diarioitalia.org" id="contact-mail">info@diarioitalia.org</a></p>
+      <p class="footnav"><a href="/privacy" data-nav="privacy" id="privacy-link">Privacidad y aviso legal</a></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+const LANGS = [["es", "Español"], ["it", "Italiano"]];
+const LOCALE = { es: "es-AR", it: "it-IT" };
+const TOPIC_ORDER = ["societa", "politica", "cittadinanza", "comunita", "cultura", "economia", "sport", "italia"];
+const T = {
+  es: { tagline: "Las noticias de la colectividad italiana en Argentina, cada día", edition: "Edición del", note: "Selección diaria", all: "Todos", read: "Leer en", lead: "Destacado", stories: n => n === 1 ? "1 noticia" : n + " noticias",
+        about: "Diario Italia Argentina selecciona cada día las noticias más relevantes para la colectividad italiana en Argentina, publicadas por sus medios, instituciones y asociaciones, y las resume en español e italiano. Cada síntesis enlaza a la publicación original.",
+        rights: "Las síntesis son redactadas por Diario Italia Argentina; los artículos completos, las fotos y las marcas pertenecen a cada medio o institución.",
+        srcLabel: "Fuentes monitoreadas", srcCount: n => n + " medios, instituciones y asociaciones de todo el país",
+        topics: { societa: "Sociedad", politica: "Política y representación", cittadinanza: "Ciudadanía y consulados", comunita: "Colectividad y asociaciones", cultura: "Cultura e idioma", economia: "Economía y empresas", sport: "Deporte", italia: "Desde Italia" } },
+  it: { tagline: "Le notizie della collettività italiana in Argentina, ogni giorno", edition: "Edizione di", note: "Selezione quotidiana", all: "Tutti", read: "Leggi su", lead: "In apertura", stories: n => n === 1 ? "1 notizia" : n + " notizie",
+        about: "Diario Italia Argentina seleziona ogni giorno le notizie più rilevanti per la collettività italiana in Argentina, pubblicate dai suoi media, dalle istituzioni e dalle associazioni, e le riassume in spagnolo e in italiano. Ogni sintesi rimanda alla pubblicazione originale.",
+        rights: "I testi delle sintesi sono redatti da Diario Italia Argentina; gli articoli completi, le foto e i marchi appartengono alle rispettive testate e istituzioni.",
+        srcLabel: "Fonti monitorate", srcCount: n => n + " media, istituzioni e associazioni di tutto il paese",
+        topics: { societa: "Società", politica: "Politica e rappresentanza", cittadinanza: "Cittadinanza e consolati", comunita: "Collettività e associazioni", cultura: "Cultura e lingua", economia: "Economia e imprese", sport: "Sport", italia: "Dall'Italia" } }
+};
+
+const X = {
+  es: { contact: "Contacto", region: "Región", topic: "Tema", allR: "Todas", brief: "En breve", wa: "Compartir en WhatsApp", copy: "Copiar el enlace", copied: "Enlace copiado", dark: "Tema oscuro", light: "Tema claro", none: "No hay noticias para esta selección.",
+        kinds: { comunita: "Colectividad", istituzionale: "Institucional", agenzia: "Agencia" },
+        regions: { nacional: "Todo el país", amba: "Buenos Aires y AMBA", bonaerense: "Provincia de Buenos Aires", centro: "Centro", noa: "Noroeste", nea: "Noreste y Litoral", cuyo: "Cuyo", patagonia: "Patagonia", italia: "Italia" } },
+  it: { contact: "Contatti", region: "Regione", topic: "Tema", allR: "Tutte", brief: "In breve", wa: "Condividi su WhatsApp", copy: "Copia il link", copied: "Link copiato", dark: "Tema scuro", light: "Tema chiaro", none: "Nessuna notizia per questa selezione.",
+        kinds: { comunita: "Collettività", istituzionale: "Istituzionale", agenzia: "Agenzia" },
+        regions: { nacional: "Tutto il paese", amba: "Buenos Aires e AMBA", bonaerense: "Provincia di Buenos Aires", centro: "Centro", noa: "Nord-ovest", nea: "Nord-est e Litorale", cuyo: "Cuyo", patagonia: "Patagonia", italia: "Italia" } }
+};
+const NAV = {
+  es: { "chi-siamo": "Quiénes somos", fonti: "Fuentes", segnala: "Enviar una noticia", privacy: "Privacidad y aviso legal" },
+  it: { "chi-siamo": "Chi siamo", fonti: "Fonti", segnala: "Segnala una notizia", privacy: "Privacy e note legali" }
+};
+// Regioni argentine: il campo `area` di ogni notizia (vedi REDAZIONE.md)
+const REGION_ORDER = ["nacional", "amba", "bonaerense", "centro", "noa", "nea", "cuyo", "patagonia", "italia"];
+const regionOf = it => REGION_ORDER.includes(it.area) ? it.area : null;
+
+const FLAG = {
+  IT: '<rect width="6" height="12" fill="#009246"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#ce2b37"/>',
+  FR: '<rect width="6" height="12" fill="#0055a4"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#ef4135"/>',
+  BE: '<rect width="6" height="12" fill="#000"/><rect x="6" width="6" height="12" fill="#fdda24"/><rect x="12" width="6" height="12" fill="#ef3340"/>',
+  IE: '<rect width="6" height="12" fill="#169b62"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#ff883e"/>',
+  MX: '<rect width="6" height="12" fill="#006847"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#ce1126"/><circle cx="9" cy="6" r="1.4" fill="#8c6b3b"/>',
+  PE: '<rect width="6" height="12" fill="#d91023"/><rect x="6" width="6" height="12" fill="#fff"/><rect x="12" width="6" height="12" fill="#d91023"/>',
+  CA: '<rect width="18" height="12" fill="#fff"/><rect width="4.5" height="12" fill="#d52b1e"/><rect x="13.5" width="4.5" height="12" fill="#d52b1e"/><path d="M9 3l1 2 1.4-.5-.6 2.3 1-.3L9 9 6.2 6.5l1 .3-.6-2.3L8 5z" fill="#d52b1e"/>',
+  DE: '<rect width="18" height="4" fill="#000"/><rect y="4" width="18" height="4" fill="#dd0000"/><rect y="8" width="18" height="4" fill="#ffce00"/>',
+  AT: '<rect width="18" height="12" fill="#ed2939"/><rect y="4" width="18" height="4" fill="#fff"/>',
+  NL: '<rect width="18" height="4" fill="#ae1c28"/><rect y="4" width="18" height="4" fill="#fff"/><rect y="8" width="18" height="4" fill="#21468b"/>',
+  LU: '<rect width="18" height="4" fill="#ed2939"/><rect y="4" width="18" height="4" fill="#fff"/><rect y="8" width="18" height="4" fill="#00a1de"/>',
+  HR: '<rect width="18" height="4" fill="#ff0000"/><rect y="4" width="18" height="4" fill="#fff"/><rect y="8" width="18" height="4" fill="#171796"/><rect x="7.4" y="3.2" width="3.2" height="4.4" fill="#ff0000" stroke="#fff" stroke-width="0.4"/>',
+  SI: '<rect width="18" height="4" fill="#fff"/><rect y="4" width="18" height="4" fill="#0000ff"/><rect y="8" width="18" height="4" fill="#ff0000"/><rect x="3" y="2" width="3.4" height="4.4" fill="#0000ff" stroke="#ff0000" stroke-width="0.4"/>',
+  PL: '<rect width="18" height="6" fill="#fff"/><rect y="6" width="18" height="6" fill="#dc143c"/>',
+  RU: '<rect width="18" height="4" fill="#fff"/><rect y="4" width="18" height="4" fill="#0039a6"/><rect y="8" width="18" height="4" fill="#d52b1e"/>',
+  ES: '<rect width="18" height="12" fill="#aa151b"/><rect y="3" width="18" height="6" fill="#f1bf00"/>',
+  CO: '<rect width="18" height="6" fill="#fcd116"/><rect y="6" width="18" height="3" fill="#003893"/><rect y="9" width="18" height="3" fill="#ce1126"/>',
+  VE: '<rect width="18" height="4" fill="#ffcc00"/><rect y="4" width="18" height="4" fill="#00247d"/><rect y="8" width="18" height="4" fill="#cf142b"/>',
+  AR: '<rect width="18" height="12" fill="#74acdf"/><rect y="4" width="18" height="4" fill="#fff"/><circle cx="9" cy="6" r="1.3" fill="#f6b40e"/>',
+  UY: '<rect width="18" height="12" fill="#fff"/><rect y="1.33" width="18" height="1.33" fill="#0038a8"/><rect y="4" width="18" height="1.33" fill="#0038a8"/><rect y="6.67" width="18" height="1.33" fill="#0038a8"/><rect y="9.33" width="18" height="1.33" fill="#0038a8"/><rect width="7" height="6.67" fill="#fff"/><circle cx="3.5" cy="3.3" r="1.6" fill="#fcd116"/>',
+  CL: '<rect width="18" height="6" fill="#fff"/><rect y="6" width="18" height="6" fill="#d52b1e"/><rect width="6" height="6" fill="#0039a6"/><circle cx="3" cy="3" r="1.1" fill="#fff"/>',
+  BR: '<rect width="18" height="12" fill="#009c3b"/><polygon points="9,1.5 16.5,6 9,10.5 1.5,6" fill="#ffdf00"/><circle cx="9" cy="6" r="2.6" fill="#002776"/>',
+  US: '<rect width="18" height="12" fill="#fff"/><rect width="18" height="1.7" fill="#b22234"/><rect y="3.4" width="18" height="1.7" fill="#b22234"/><rect y="6.8" width="18" height="1.7" fill="#b22234"/><rect y="10.2" width="18" height="1.8" fill="#b22234"/><rect width="8" height="6.5" fill="#3c3b6e"/>',
+  GB: '<rect width="18" height="12" fill="#012169"/><path d="M0 0L18 12M18 0L0 12" stroke="#fff" stroke-width="2.4"/><path d="M0 0L18 12M18 0L0 12" stroke="#c8102e" stroke-width="0.9"/><path d="M9 0v12M0 6h18" stroke="#fff" stroke-width="3.6"/><path d="M9 0v12M0 6h18" stroke="#c8102e" stroke-width="2"/>',
+  AU: '<rect width="18" height="12" fill="#012169"/><path d="M0 0L8 6M8 0L0 6" stroke="#fff" stroke-width="1"/><path d="M4 0v6M0 3h8" stroke="#fff" stroke-width="1.6"/><path d="M4 0v6M0 3h8" stroke="#c8102e" stroke-width="0.8"/><circle cx="4" cy="9.2" r="1.1" fill="#fff"/><circle cx="13" cy="3" r="0.7" fill="#fff"/><circle cx="15" cy="6" r="0.7" fill="#fff"/><circle cx="12.5" cy="9" r="0.7" fill="#fff"/>',
+  CH: '<rect width="18" height="12" fill="#d52b1e"/><rect x="7.8" y="2.5" width="2.4" height="7" fill="#fff"/><rect x="5.5" y="4.8" width="7" height="2.4" fill="#fff"/>',
+  JP: '<rect width="18" height="12" fill="#fff"/><circle cx="9" cy="6" r="3.4" fill="#bc002d"/>',
+  TN: '<rect width="18" height="12" fill="#e70013"/><circle cx="9" cy="6" r="3.2" fill="#fff"/><circle cx="9.4" cy="6" r="2.2" fill="#e70013"/><circle cx="10" cy="6" r="1.8" fill="#fff"/>',
+  ZA: '<rect width="18" height="12" fill="#007a4d"/><rect width="18" height="4" fill="#de3831"/><rect y="8" width="18" height="4" fill="#002395"/><polygon points="0,0 7,6 0,12" fill="#000" stroke="#ffb612" stroke-width="0.8"/>',
+  PT: '<rect width="18" height="12" fill="#ff0000"/><rect width="7" height="12" fill="#006600"/><circle cx="7" cy="6" r="2" fill="#ffcc00"/>',
+  GR: '<rect width="18" height="12" fill="#0d5eaf"/><rect y="1.33" width="18" height="1.33" fill="#fff"/><rect y="4" width="18" height="1.33" fill="#fff"/><rect y="6.67" width="18" height="1.33" fill="#fff"/><rect y="9.33" width="18" height="1.33" fill="#fff"/><rect width="6.67" height="6.67" fill="#0d5eaf"/><rect x="2.67" width="1.33" height="6.67" fill="#fff"/><rect y="2.67" width="6.67" height="1.33" fill="#fff"/>',
+  SE: '<rect width="18" height="12" fill="#006aa7"/><rect x="5" width="2.2" height="12" fill="#fecc00"/><rect y="4.9" width="18" height="2.2" fill="#fecc00"/>',
+  DK: '<rect width="18" height="12" fill="#c8102e"/><rect x="5" width="2.2" height="12" fill="#fff"/><rect y="4.9" width="18" height="2.2" fill="#fff"/>'
+};
+function flagEl(code) {
+  if (!code || code === "AR") return null; // in Argentina la bandiera nazionale non serve: solo IT per le notizie dall'Italia
+  if (FLAG[code]) {
+    const sp = el("span", { class: "flag", "aria-hidden": "true" });
+    sp.innerHTML = '<svg viewBox="0 0 18 12" width="18" height="12">' + FLAG[code] + "</svg>";
+    return sp;
+  }
+  return el("span", { class: "kind kind-agenzia", "aria-hidden": "true", text: code });
+}
+
+const ICON = {
+  wa: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 21l2-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>',
+  link: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></svg>',
+  check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg>',
+  moon: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>',
+  sun: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+};
+
+const ARCH = { es: ["Ediciones anteriores", "hoy"], it: ["Numeri precedenti", "oggi"] };
+
+let DATA = null;
+let DATES = [];
+let lang = "es";
+let topic = "all";
+let region = "all";
+
+function isDark() {
+  const t = document.documentElement.getAttribute("data-theme");
+  if (t) return t === "dark";
+  return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+}
+function paintTheme() {
+  const b = document.getElementById("theme");
+  const dark = isDark();
+  b.innerHTML = dark ? ICON.sun : ICON.moon;
+  b.setAttribute("aria-label", dark ? X[lang].light : X[lang].dark);
+  b.title = dark ? X[lang].light : X[lang].dark;
+}
+document.getElementById("theme").addEventListener("click", () => {
+  const next = isDark() ? "light" : "dark";
+  document.documentElement.setAttribute("data-theme", next);
+  try { localStorage.setItem("diario-theme", next); } catch (e) {}
+  paintTheme();
+});
+
+function pickLang() {
+  const h = (location.hash || "").replace("#", "");
+  if (T[h]) return h;
+  try { const s = localStorage.getItem("diario-ar-lang"); if (T[s]) return s; } catch (e) {}
+  return "es";
+}
+
+function fmtDate(iso, opts) {
+  const d = new Date(iso + "T12:00:00");
+  return new Intl.DateTimeFormat(LOCALE[lang], opts).format(d);
+}
+
+function el(tag, attrs, ...kids) {
+  const n = document.createElement(tag);
+  for (const k in attrs || {}) {
+    if (k === "class") n.className = attrs[k];
+    else if (k === "text") n.textContent = attrs[k];
+    else n.setAttribute(k, attrs[k]);
+  }
+  kids.flat().forEach(c => c != null && n.append(c));
+  return n;
+}
+
+function meta(it) {
+  return el("div", { class: "meta" },
+    el("span", { class: "where" }, flagEl(it.country), el("span", { text: it.place })),
+    el("span", { class: "sep", text: "·" }),
+    el("span", { class: "src", text: it.source }),
+    it.kind && X[lang].kinds[it.kind] ? el("span", { class: "kind kind-" + it.kind, text: X[lang].kinds[it.kind] }) : null,
+    el("span", { class: "sep", text: "·" }),
+    el("time", { datetime: it.date, text: fmtDate(it.date, { day: "numeric", month: "short" }) })
+  );
+}
+
+function actions(it) {
+  const x = X[lang];
+  const wa = el("a", { class: "iconbtn", href: "https://wa.me/?text=" + encodeURIComponent(it.title[lang] + "\n" + it.url + "\n\n— Diario Italia Argentina · https://argentina.diarioitalia.org"), target: "_blank", rel: "noopener", "aria-label": x.wa, title: x.wa });
+  wa.innerHTML = ICON.wa;
+  const cp = el("button", { type: "button", class: "iconbtn", "aria-label": x.copy, title: x.copy });
+  cp.innerHTML = ICON.link;
+  cp.addEventListener("click", () => {
+    const done = () => { cp.innerHTML = ICON.check; cp.setAttribute("aria-label", x.copied); cp.title = x.copied;
+      setTimeout(() => { cp.innerHTML = ICON.link; cp.setAttribute("aria-label", x.copy); cp.title = x.copy; }, 2000); };
+    if (navigator.clipboard) navigator.clipboard.writeText(it.url).then(done).catch(() => {});
+  });
+  return el("div", { class: "actions" }, readLink(it), wa, cp);
+}
+
+function readLink(it) {
+  return el("a", { class: "read", href: it.url, target: "_blank", rel: "noopener" },
+    T[lang].read + " " + it.source, el("span", { "aria-hidden": "true", text: "→" }));
+}
+
+function renderChrome() {
+  const t = T[lang];
+  document.documentElement.lang = lang;
+  document.getElementById("tagline").textContent = t.tagline;
+  document.getElementById("edition-date").textContent = t.edition + " " + fmtDate(DATA.edition, { weekday: "long", day: "numeric", month: "long", year: "numeric" });
+  document.getElementById("edition-note").textContent = t.note + " · " + t.stories(DATA.items.length);
+  document.getElementById("about").textContent = t.about;
+  document.getElementById("rights").textContent = t.rights;
+  document.getElementById("sources-label").textContent = t.srcLabel;
+  document.getElementById("sources-count").textContent = t.srcCount(DATA.sources_monitored);
+  document.getElementById("contact-label").textContent = X[lang].contact;
+  document.querySelectorAll("[data-nav]").forEach(a => { a.textContent = NAV[lang][a.dataset.nav]; a.href = "/" + a.dataset.nav + "#" + lang; });
+
+  document.getElementById("archive-label").textContent = ARCH[lang][0];
+  const sel = document.getElementById("archive");
+  const dates = DATES.length ? DATES : [DATA.edition];
+  sel.replaceChildren(...dates.map((d, i) => {
+    const o = el("option", { value: d, text: fmtDate(d, { day: "numeric", month: "short", year: "numeric" }) + (i === 0 ? " (" + ARCH[lang][1] + ")" : "") });
+    if (d === DATA.edition) o.selected = true;
+    return o;
+  }));
+
+  const bar = document.getElementById("langbar");
+  bar.replaceChildren(...LANGS.map(([code, name]) => {
+    const b = el("button", { type: "button", id: "lang-" + code, "aria-pressed": String(code === lang), title: name, text: code.toUpperCase() });
+    b.addEventListener("click", () => setLang(code));
+    return b;
+  }));
+
+  const x = X[lang];
+  const inRegion = i => region === "all" || regionOf(i) === region;
+  const inTopic = i => topic === "all" || i.topic === topic;
+  const presentT = TOPIC_ORDER.filter(k => DATA.items.some(i => i.topic === k));
+  const presentR = REGION_ORDER.filter(r => DATA.items.some(i => regionOf(i) === r));
+  const mk = (prefix, key, label, n, on, set) => {
+    const b = el("button", { type: "button", id: prefix + "-" + key, "aria-pressed": String(on) }, label, el("span", { class: "n", text: n }));
+    b.addEventListener("click", () => { set(key); render(); });
+    return b;
+  };
+  document.getElementById("topics").replaceChildren(
+    el("span", { class: "row-label", text: x.topic }),
+    mk("topic", "all", t.all, DATA.items.filter(inRegion).length, topic === "all", k => topic = k),
+    ...presentT.map(k => mk("topic", k, t.topics[k], DATA.items.filter(i => i.topic === k && inRegion(i)).length, topic === k, v => topic = v))
+  );
+  const rrow = document.getElementById("regions");
+  if (presentR.length > 1) {
+    rrow.hidden = false;
+    rrow.replaceChildren(
+      el("span", { class: "row-label", text: x.region }),
+      mk("region", "all", x.allR, DATA.items.filter(inTopic).length, region === "all", r => region = r),
+      ...presentR.map(r => mk("region", r, x.regions[r], DATA.items.filter(i => regionOf(i) === r && inTopic(i)).length, region === r, v => region = v))
+    );
+  } else { rrow.hidden = true; rrow.replaceChildren(); }
+  paintTheme();
+}
+
+function renderMain() {
+  const t = T[lang], x = X[lang];
+  const main = document.getElementById("main");
+  const nodes = [];
+  const match = i => (topic === "all" || i.topic === topic) && (region === "all" || regionOf(i) === region);
+  const front = topic === "all" && region === "all";
+  const lead = DATA.items.find(i => i.lead);
+  const pool = DATA.items.filter(i => match(i) && !(front && i === lead));
+
+  if (front && lead) {
+    const leadCard = el("section", { class: "lead", "aria-label": t.lead, id: "n-" + lead.id },
+      el("div", { class: "meta" }, el("span", { class: "src", text: t.lead + " · " + t.topics[lead.topic] })),
+      el("h2", { text: lead.title[lang] }),
+      el("p", { class: "summary", text: lead.summary[lang] }),
+      meta(lead),
+      actions(lead));
+    const picks = [], seen = new Set();
+    for (const k of TOPIC_ORDER) for (const it of pool) if (it.topic === k && !seen.has(k) && picks.length < 5) { picks.push(it); seen.add(k); }
+    for (const it of pool) if (picks.length < 5 && !picks.includes(it)) picks.push(it);
+    const brief = el("aside", { class: "brief", "aria-labelledby": "brief-h" },
+      el("h2", { id: "brief-h", text: x.brief }),
+      el("ol", {}, picks.map(it => {
+        const a = el("a", { href: "#n-" + it.id, text: it.title[lang] });
+        a.addEventListener("click", e => { e.preventDefault(); const target = document.getElementById("n-" + it.id); if (target) { target.scrollIntoView({ behavior: "smooth", block: "start" }); target.setAttribute("tabindex", "-1"); target.focus({ preventScroll: true }); } });
+        return el("li", {}, el("span", { class: "meta" }, el("span", { class: "where" }, flagEl(it.country), el("span", { text: it.place }))), a);
+      })));
+    nodes.push(el("div", { class: "top" }, leadCard, picks.length ? brief : null));
+  }
+
+  for (const k of TOPIC_ORDER) {
+    const items = pool.filter(i => i.topic === k);
+    if (!items.length) continue;
+    nodes.push(el("section", { class: "section", id: "sec-" + k },
+      el("h3", {}, t.topics[k], el("span", { class: "count", text: t.stories(items.length) })),
+      el("div", { class: "grid" }, items.map(it =>
+        el("article", { class: "item", id: "n-" + it.id },
+          meta(it),
+          el("h4", { text: it.title[lang] }),
+          el("p", { text: it.summary[lang] }),
+          actions(it))))
+    ));
+  }
+  if (!nodes.length) nodes.push(el("p", { class: "empty", text: x.none }));
+  main.replaceChildren(...nodes);
+}
+
+function render() { renderChrome(); renderMain(); }
+
+function setLang(code) {
+  lang = code;
+  try { localStorage.setItem("diario-ar-lang", code); } catch (e) {}
+  if (location.hash !== "#" + code) history.replaceState(null, "", "#" + code);
+  render();
+}
+
+window.addEventListener("hashchange", () => { const h = location.hash.replace("#", ""); if (T[h] && h !== lang) { lang = h; render(); } });
+
+function getJSON(path) {
+  return fetch(path, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+}
+
+document.getElementById("archive").addEventListener("change", e => {
+  const d = e.target.value;
+  const path = d === DATES[0] ? "data/news.json" : "data/archive/" + d + ".json";
+  getJSON(path).then(x => { DATA = x; topic = "all"; region = "all"; render(); window.scrollTo(0, 0); })
+    .catch(() => { e.target.value = DATA.edition; });
+});
+
+getJSON("data/archive/index.json").then(x => { DATES = x.dates || []; }).catch(() => {})
+  .then(() => getJSON("data/news.json"))
+  .then(d => { DATA = d; lang = pickLang(); render(); })
+  .catch(() => { document.getElementById("loading").textContent = "No se pudieron cargar las noticias. Recargá la página."; });
+</script>
+</body>
+</html>

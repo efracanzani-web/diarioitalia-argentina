@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacidad y aviso legal · Diario Italia Argentina</title>
+<meta name="description" content="Diario Italia Argentina no usa cookies de seguimiento, no pide registrarse y no recoge datos personales de los lectores.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://argentina.diarioitalia.org/privacy">
+<meta name="theme-color" content="#15202e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diario Italia Argentina">
+<meta property="og:title" content="Privacidad y aviso legal · Diario Italia Argentina">
+<meta property="og:description" content="Diario Italia Argentina no usa cookies de seguimiento, no pide registrarse y no recoge datos personales de los lectores.">
+<meta property="og:url" content="https://argentina.diarioitalia.org/privacy">
+<meta property="og:image" content="https://argentina.diarioitalia.org/og.png">
+<script>try{var t=localStorage.getItem("diario-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: masthead with tricolour rule, language bar, topic filter, lead story, then a two-column grid of dispatches grouped by topic. */
+:root {
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #15202e;
+  --muted: #5a6575;
+  --rule: #d9dde3;
+  --accent: #b3122b;
+  --green: #0b6b45;
+  --chip: #eceff3;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+    --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+  --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+/* Masthead */
+.tricolore { display: grid; grid-template-columns: 1fr 1fr 1fr; height: 5px; }
+.tricolore span:nth-child(1) { background: var(--green); }
+.tricolore span:nth-child(2) { background: var(--surface); border-block: 1px solid var(--rule); }
+.tricolore span:nth-child(3) { background: var(--accent); }
+header.mast { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.mast-inner { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; padding: 22px 0 16px; }
+.brand h1, .brand .h1 {
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1; margin: 0; letter-spacing: -0.01em;
+}
+.brand p { margin: 6px 0 0; color: var(--muted); font-size: 0.95rem; }
+.edition { text-align: right; font-size: 0.85rem; color: var(--muted); }
+.edition strong { display: block; color: var(--ink); font-weight: 600; font-size: 0.95rem; }
+.archive { display: flex; gap: 8px; align-items: center; }
+.archive select {
+  font: 500 0.85rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 6px 8px; cursor: pointer;
+}
+.archive select:hover { border-color: var(--ink); }
+
+.brand { display: flex; align-items: center; gap: 16px; }
+.logo { width: 60px; height: 60px; flex: none; color: var(--ink); }
+.wordmark { display: inline-flex; flex-direction: column; }
+.ar { display: block; font: 700 clamp(0.95rem, 2vw, 1.2rem)/1 var(--font-body); letter-spacing: 0.32em; text-transform: uppercase; color: var(--celeste); margin-top: 6px; }
+:root { --celeste: #2b6ea6; }
+:root[data-theme="dark"] { --celeste: #8cc4ee; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --celeste: #8cc4ee; } }
+.rule3 { display: grid; grid-template-columns: repeat(3, 1fr); height: 4px; margin-top: 8px; }
+.rule3 span:nth-child(1) { background: var(--green); }
+.rule3 span:nth-child(2) { background: #fff; box-shadow: inset 0 0 0 1px var(--rule); }
+.rule3 span:nth-child(3) { background: var(--accent); }
+.tools { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 8px; flex-wrap: wrap; }
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 40px; height: 36px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink); font: 500 0.8rem var(--font-body);
+}
+.iconbtn:hover { border-color: var(--ink); }
+.iconbtn svg { width: 17px; height: 17px; }
+
+/* Language bar */
+.langbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 14px; }
+.langrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+.pagenav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 0 0 14px; font-size: 0.88rem; font-weight: 600; }
+.pagenav a { color: var(--muted); text-decoration: none; }
+.pagenav a:hover, .pagenav a[aria-current="page"] { color: var(--accent); }
+.pagenav a[data-nav="home"] { display: none; }
+.footnav a { color: var(--ink); }
+@media (max-width: 640px) { .pagenav { padding-top: 0; font-size: 0.8rem; gap: 4px 14px; } .langbar { padding-bottom: 10px; } }
+.langbar button {
+  font: 600 0.8rem/1 var(--font-body); letter-spacing: 0.04em;
+  padding: 8px 10px; border-radius: 6px; cursor: pointer;
+  background: transparent; color: var(--muted); border: 1px solid var(--rule);
+}
+.langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.langbar button:hover { border-color: var(--ink); color: var(--ink); }
+.langbar button[aria-pressed="true"]:hover { color: var(--paper); }
+
+/* Topic filter */
+nav.topics { position: sticky; top: 0; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.filters { display: grid; gap: 2px; padding-block: 6px; }
+.topic-row { display: flex; gap: 8px; overflow-x: auto; padding: 6px 0; scrollbar-width: thin; align-items: center; }
+.row-label { flex: none; width: 68px; font: 600 0.72rem/1 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.topic-row button {
+  flex: none; font: 500 0.85rem/1 var(--font-body); padding: 8px 12px; border-radius: 999px;
+  border: 1px solid transparent; background: var(--chip); color: var(--ink); cursor: pointer;
+}
+.topic-row button .n { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 4px; }
+.topic-row button[aria-pressed="true"] { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+
+main.wrap { padding-block: 28px 48px; display: grid; gap: 36px; }
+
+/* Top: lead + in breve */
+.top { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.brief h2 { font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin: 4px 0 6px; }
+.brief ol { list-style: none; margin: 0; padding: 0; }
+.brief li { border-top: 1px solid var(--rule); padding: 12px 0; display: grid; gap: 5px; }
+.brief a { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; line-height: 1.25; text-decoration: none; color: var(--ink); }
+.brief a:hover { color: var(--accent); }
+.where { display: inline-flex; align-items: center; gap: 6px; }
+.flag { width: 18px; height: 12px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px var(--rule); display: inline-block; }
+.kind { font: 600 0.68rem/1 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; }
+.kind-comunita { color: #0b6b45; background: #e5f2eb; }
+.kind-istituzionale { color: #1d4f91; background: #e6edf8; }
+.kind-agenzia { color: #4f5a69; background: #eceff3; }
+:root[data-theme="dark"] .kind-comunita { color: #7fdcb0; background: #163a2b; }
+:root[data-theme="dark"] .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+:root[data-theme="dark"] .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .kind-comunita { color: #7fdcb0; background: #163a2b; }
+  :root:not([data-theme="light"]) .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+  :root:not([data-theme="light"]) .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+}
+.actions { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+.actions .read { margin-right: auto; }
+.empty { color: var(--muted); }
+
+/* Lead */
+.lead {
+  display: grid; gap: 14px;
+  background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--accent);
+  padding: 26px; border-radius: 4px;
+}
+.lead h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  line-height: 1.15; margin: 8px 0 0; text-wrap: balance;
+}
+.lead .summary { font-size: 1.05rem; margin: 0; max-width: 62ch; }
+.lead-side { display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+
+/* Sections */
+.section h3 {
+  display: flex; align-items: baseline; gap: 10px;
+  font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--accent); margin: 0 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--ink);
+}
+.section h3 .count { color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+[id^="n-"] { scroll-margin-top: 130px; }
+article.item { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; align-content: start; }
+article.item h4 {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.22;
+  margin: 0; text-wrap: balance;
+}
+article.item p { margin: 0; max-width: 65ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 0.8rem; color: var(--muted); }
+.meta .src { font-weight: 600; color: var(--ink); }
+.meta .sep { opacity: 0.5; }
+.read {
+  justify-self: start; display: inline-flex; gap: 6px; align-items: center;
+  font-weight: 600; font-size: 0.88rem; color: var(--accent); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.read:hover { border-bottom-color: var(--accent); }
+
+footer { border-top: 1px solid var(--rule); background: var(--surface); }
+.foot { padding: 22px 0 32px; display: grid; grid-template-columns: 2fr 1fr; gap: 24px; font-size: 0.88rem; color: var(--muted); }
+.foot p { margin: 0 0 8px; max-width: 70ch; }
+.foot strong { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .lead { padding: 20px; }
+  .top { grid-template-columns: 1fr; }
+  .logo { width: 46px; height: 46px; }
+  .row-label { width: auto; }
+  .grid { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+  .edition { text-align: left; }
+  .archive, .tools { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .read, .iconbtn, .langbar button, .topic-row button { transition: color .15s, background-color .15s, border-color .15s; }
+}
+
+.pagenav a[data-nav="home"] { display: inline; }
+.page { max-width: 760px; padding-block: 32px 56px; }
+.page h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.1; margin: 0 0 18px; }
+.page h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.45rem; margin: 34px 0 10px; }
+.page p, .page li { font-size: 1.05rem; line-height: 1.6; }
+.page p:first-of-type strong { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; line-height: 1.4; display: block; }
+.page ul, .page ol { padding-left: 1.3em; }
+.page li { margin: 6px 0; }
+.page a { color: var(--accent); }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }
+.src-region { margin-top: 30px; }
+.src-region h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+.src-region h2 small { font: 500 0.85rem/1 var(--font-body); color: var(--muted); }
+.page .src-country { margin: 14px 0 4px; font: 700 0.78rem/1 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.src-list { list-style: none; padding: 0 !important; margin: 0; }
+.src-list li { display: flex; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--rule); padding: 7px 0; margin: 0; font-size: 0.98rem; }
+.src-list li a { color: var(--ink); text-decoration: none; font-weight: 500; }
+.src-list li a:hover { color: var(--accent); text-decoration: underline; }
+.src-list .kind { margin-left: auto; flex: none; }
+.src-list { }
+.src-list li { flex-wrap: wrap; }
+.src-city { color: var(--muted); font-size: 0.88rem; }
+.page .src-list a.soc { font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+.ar { display: block; font: 700 clamp(0.95rem, 2vw, 1.2rem)/1 var(--font-body); letter-spacing: 0.32em; text-transform: uppercase; color: var(--celeste); margin-top: 6px; }
+</style>
+</head>
+<body>
+<!-- Pagina generata da scripts/build_pages.py: non modificare a mano. -->
+<div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-inner">
+      <a class="brand" href="/" style="text-decoration:none">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20.5" fill="none" stroke="currentColor" stroke-width="3.5"/><ellipse cx="24" cy="24" rx="8" ry="20.5" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="3.5" y="20" width="13.7" height="8" fill="#0b6b45"/><rect x="17.2" y="20" width="13.6" height="8" fill="#fff" stroke="#9aa3ae" stroke-width="0.8"/><rect x="30.8" y="20" width="13.7" height="8" fill="#b3122b"/></svg>
+        <div>
+          <span class="wordmark"><span class="h1">Diario Italia<span class="ar">Argentina</span></span><span class="rule3" aria-hidden="true"><span></span><span></span><span></span></span></span>
+          <p id="tagline">Las noticias de la colectividad italiana en Argentina, cada día</p>
+        </div>
+      </a>
+    </div>
+    <div class="langrow"><div class="langbar" role="group" aria-label="Idioma / Lingua" id="langbar"></div>
+      <nav class="pagenav" id="pagenav" aria-label="Diario Italia Argentina"><a href="/" data-nav="home">Noticias</a><a href="/chi-siamo" data-nav="chi-siamo">Quiénes somos</a><a href="/fonti" data-nav="fonti">Fuentes</a><a href="/segnala" data-nav="segnala">Enviar una noticia</a></nav></div>
+  </div>
+</header>
+<main class="wrap page">
+<article data-lang="es" lang="es" class="on">
+<h1>Privacidad y aviso legal</h1>
+<p><strong>Diario Italia Argentina no usa cookies de seguimiento, no pide registrarse y no recoge datos personales de los lectores.</strong></p>
+<h2>Datos y cookies</h2>
+<ul>
+<li><strong>Ninguna cookie de seguimiento ni publicitaria.</strong> El sitio no muestra publicidad ni usa herramientas de perfilado.</li>
+<li><strong>Preferencias técnicas.</strong> El idioma y el tema claro/oscuro elegidos se guardan solo en su dispositivo, para recordarlos en la próxima visita. No se nos envían.</li>
+<li><strong>Estadísticas de visitas.</strong> Usamos Cloudflare Web Analytics, que cuenta las visitas de forma agregada y anónima, sin cookies y sin identificar a cada lector.</li>
+<li><strong>Alojamiento.</strong> El sitio está alojado en Cloudflare, que por razones técnicas y de seguridad trata datos de conexión como la dirección IP.</li>
+<li><strong>Email.</strong> Si nos escribe, usamos su dirección y el contenido del mensaje solo para responderle. Puede pedir que se borren en cualquier momento.</li>
+</ul>
+<h2>Contenidos</h2>
+<ul>
+<li>Las síntesis publicadas son textos originales de Diario Italia Argentina. Cada noticia indica la fuente y enlaza a la publicación completa, que sigue siendo propiedad de sus autores.</li>
+<li>Los nombres y marcas de los medios e instituciones citados pertenecen a sus legítimos titulares.</li>
+<li>Hacemos lo posible por ser precisos, pero pueden escaparse errores. Avisos, correcciones o pedidos de eliminación: <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a>. Respondemos lo antes posible.</li>
+<li>Los enlaces a sitios externos llevan a contenidos de los que Diario Italia Argentina no es responsable.</li>
+</ul>
+<h2>Titular</h2>
+<p>Diario Italia Argentina – argentina.diarioitalia.org – <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a></p>
+<p><em>Última actualización: noviembre de 2026.</em></p>
+</article>
+<article data-lang="it" lang="it">
+<h1>Privacy e note legali</h1>
+<p><strong>Diario Italia Argentina non usa cookie di tracciamento, non chiede di registrarsi e non raccoglie dati personali dei lettori.</strong></p>
+<h2>Dati e cookie</h2>
+<ul>
+<li><strong>Nessun cookie di tracciamento o pubblicitario.</strong> Il sito non mostra pubblicità e non usa strumenti di profilazione.</li>
+<li><strong>Preferenze tecniche.</strong> La lingua e il tema chiaro/scuro scelti sono salvati solo sul tuo dispositivo, per ricordarli alla visita successiva. Non ci vengono inviati.</li>
+<li><strong>Statistiche delle visite.</strong> Usiamo Cloudflare Web Analytics, che conta le visite in forma aggregata e anonima, senza cookie e senza identificare i singoli lettori.</li>
+<li><strong>Hosting.</strong> Il sito è ospitato da Cloudflare, che per ragioni tecniche e di sicurezza tratta dati di connessione come l'indirizzo IP.</li>
+<li><strong>Email.</strong> Se ci scrivi, usiamo il tuo indirizzo e il contenuto del messaggio solo per risponderti. Puoi chiederne la cancellazione in qualsiasi momento.</li>
+</ul>
+<h2>Contenuti</h2>
+<ul>
+<li>Le sintesi pubblicate sono testi originali di Diario Italia Argentina. Ogni notizia indica la fonte e rimanda alla pubblicazione completa, che resta di proprietà dei suoi autori.</li>
+<li>I nomi e i marchi dei media e delle istituzioni citati appartengono ai legittimi titolari.</li>
+<li>Facciamo il possibile per essere precisi, ma possono sfuggire errori. Segnalazioni, correzioni o richieste di rimozione: <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a>. Rispondiamo al più presto.</li>
+<li>I link a siti esterni portano a contenuti di cui Diario Italia Argentina non è responsabile.</li>
+</ul>
+<h2>Titolare</h2>
+<p>Diario Italia Argentina – argentina.diarioitalia.org – <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a></p>
+<p><em>Ultimo aggiornamento: novembre 2026.</em></p>
+</article>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div><p class="footnav" id="footnav"></p></div>
+    <div><p><a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a></p></div>
+  </div>
+</footer>
+<script>
+const D = {"nav": {"es": {"home": "Noticias", "chi-siamo": "Quiénes somos", "fonti": "Fuentes", "segnala": "Enviar una noticia", "privacy": "Privacidad y aviso legal"}, "it": {"home": "Notizie", "chi-siamo": "Chi siamo", "fonti": "Fonti", "segnala": "Segnala una notizia", "privacy": "Privacy e note legali"}}, "tagline": {"es": "Las noticias de la colectividad italiana en Argentina, cada día", "it": "Le notizie della collettività italiana in Argentina, ogni giorno"}, "titles": {"es": "Privacidad y aviso legal", "it": "Privacy e note legali"}, "slug": "privacy"};
+const LANGS = [["es", "Español"], ["it", "Italiano"]];
+function pick() {
+  const h = (location.hash || "").replace("#", "");
+  if (D.nav[h]) return h;
+  try { const s = localStorage.getItem("diario-ar-lang"); if (D.nav[s]) return s; } catch (e) {}
+  return "es";
+}
+function render(lang) {
+  document.documentElement.lang = lang;
+  document.title = D.titles[lang] + " · Diario Italia Argentina";
+  document.getElementById("tagline").textContent = D.tagline[lang];
+  document.querySelectorAll("[data-lang]").forEach(a => a.classList.toggle("on", a.dataset.lang === lang));
+  document.querySelectorAll("#pagenav [data-nav]").forEach(a => {
+    a.textContent = D.nav[lang][a.dataset.nav];
+    a.href = (a.dataset.nav === "home" ? "/" : "/" + a.dataset.nav) + "#" + lang;
+  });
+  const fn = document.getElementById("footnav"); fn.textContent = "";
+  ["home", "chi-siamo", "fonti", "segnala", "privacy"].forEach((p, i) => {
+    if (i) fn.append(" · ");
+    const a = document.createElement("a"); a.href = (p === "home" ? "/" : "/" + p) + "#" + lang; a.textContent = D.nav[lang][p]; fn.append(a);
+  });
+  const bar = document.getElementById("langbar"); bar.textContent = "";
+  LANGS.forEach(([code, name]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = code.toUpperCase(); b.title = name;
+    b.setAttribute("aria-pressed", String(code === lang));
+    b.onclick = () => { try { localStorage.setItem("diario-ar-lang", code); } catch (e) {} history.replaceState(null, "", "#" + code); render(code); };
+    bar.append(b);
+  });
+  document.querySelector(".brand").href = "/#" + lang;
+}
+render(pick());
+window.addEventListener("hashchange", () => render(pick()));
+</script>
+</body>
+</html>

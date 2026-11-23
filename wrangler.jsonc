@@ -1,0 +1,9 @@
+{
+  // Diario Italia Argentina: sito statico servito da Cloudflare Workers (static assets)
+  "name": "diarioitalia-argentina",
+  "compatibility_date": "2026-11-01",
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}

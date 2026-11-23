@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fuentes · Diario Italia Argentina</title>
+<meta name="description" content="Cada número de Diario Italia Argentina nace del trabajo de los medios, las instituciones y las asociaciones de la colectividad italiana en todo el país.">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="canonical" href="https://argentina.diarioitalia.org/fonti">
+<meta name="theme-color" content="#15202e">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Diario Italia Argentina">
+<meta property="og:title" content="Fuentes · Diario Italia Argentina">
+<meta property="og:description" content="Cada número de Diario Italia Argentina nace del trabajo de los medios, las instituciones y las asociaciones de la colectividad italiana en todo el país.">
+<meta property="og:url" content="https://argentina.diarioitalia.org/fonti">
+<meta property="og:image" content="https://argentina.diarioitalia.org/og.png">
+<script>try{var t=localStorage.getItem("diario-theme");if(t==="dark"||t==="light")document.documentElement.setAttribute("data-theme",t);}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* Layout: masthead with tricolour rule, language bar, topic filter, lead story, then a two-column grid of dispatches grouped by topic. */
+:root {
+  --paper: #f6f7f9;
+  --surface: #ffffff;
+  --ink: #15202e;
+  --muted: #5a6575;
+  --rule: #d9dde3;
+  --accent: #b3122b;
+  --green: #0b6b45;
+  --chip: #eceff3;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Public Sans", "Helvetica Neue", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+    --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #10151c; --surface: #171e27; --ink: #e8ecf1; --muted: #9aa5b3;
+  --rule: #2a3440; --accent: #ef5a6f; --green: #3fbf88; --chip: #212a35;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.55;
+}
+a { color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 3px; }
+.wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+
+/* Masthead */
+.tricolore { display: grid; grid-template-columns: 1fr 1fr 1fr; height: 5px; }
+.tricolore span:nth-child(1) { background: var(--green); }
+.tricolore span:nth-child(2) { background: var(--surface); border-block: 1px solid var(--rule); }
+.tricolore span:nth-child(3) { background: var(--accent); }
+header.mast { background: var(--surface); border-bottom: 1px solid var(--rule); }
+.mast-inner { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 16px; padding: 22px 0 16px; }
+.brand h1, .brand .h1 {
+  font-family: var(--font-display); font-weight: 700; font-size: clamp(2.2rem, 5vw, 3.4rem);
+  line-height: 1; margin: 0; letter-spacing: -0.01em;
+}
+.brand p { margin: 6px 0 0; color: var(--muted); font-size: 0.95rem; }
+.edition { text-align: right; font-size: 0.85rem; color: var(--muted); }
+.edition strong { display: block; color: var(--ink); font-weight: 600; font-size: 0.95rem; }
+.archive { display: flex; gap: 8px; align-items: center; }
+.archive select {
+  font: 500 0.85rem var(--font-body); color: var(--ink); background: var(--surface);
+  border: 1px solid var(--rule); border-radius: 6px; padding: 6px 8px; cursor: pointer;
+}
+.archive select:hover { border-color: var(--ink); }
+
+.brand { display: flex; align-items: center; gap: 16px; }
+.logo { width: 60px; height: 60px; flex: none; color: var(--ink); }
+.wordmark { display: inline-flex; flex-direction: column; }
+.ar { display: block; font: 700 clamp(0.95rem, 2vw, 1.2rem)/1 var(--font-body); letter-spacing: 0.32em; text-transform: uppercase; color: var(--celeste); margin-top: 6px; }
+:root { --celeste: #2b6ea6; }
+:root[data-theme="dark"] { --celeste: #8cc4ee; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --celeste: #8cc4ee; } }
+.rule3 { display: grid; grid-template-columns: repeat(3, 1fr); height: 4px; margin-top: 8px; }
+.rule3 span:nth-child(1) { background: var(--green); }
+.rule3 span:nth-child(2) { background: #fff; box-shadow: inset 0 0 0 1px var(--rule); }
+.rule3 span:nth-child(3) { background: var(--accent); }
+.tools { display: flex; gap: 8px; align-items: center; justify-content: flex-end; margin-top: 8px; flex-wrap: wrap; }
+.iconbtn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  min-width: 40px; height: 36px; padding: 0 9px; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--rule); background: var(--surface); color: var(--ink); font: 500 0.8rem var(--font-body);
+}
+.iconbtn:hover { border-color: var(--ink); }
+.iconbtn svg { width: 17px; height: 17px; }
+
+/* Language bar */
+.langbar { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 0 14px; }
+.langrow { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0 20px; }
+.pagenav { display: flex; flex-wrap: wrap; gap: 4px 18px; padding: 0 0 14px; font-size: 0.88rem; font-weight: 600; }
+.pagenav a { color: var(--muted); text-decoration: none; }
+.pagenav a:hover, .pagenav a[aria-current="page"] { color: var(--accent); }
+.pagenav a[data-nav="home"] { display: none; }
+.footnav a { color: var(--ink); }
+@media (max-width: 640px) { .pagenav { padding-top: 0; font-size: 0.8rem; gap: 4px 14px; } .langbar { padding-bottom: 10px; } }
+.langbar button {
+  font: 600 0.8rem/1 var(--font-body); letter-spacing: 0.04em;
+  padding: 8px 10px; border-radius: 6px; cursor: pointer;
+  background: transparent; color: var(--muted); border: 1px solid var(--rule);
+}
+.langbar button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.langbar button:hover { border-color: var(--ink); color: var(--ink); }
+.langbar button[aria-pressed="true"]:hover { color: var(--paper); }
+
+/* Topic filter */
+nav.topics { position: sticky; top: 0; z-index: 2; background: var(--paper); border-bottom: 1px solid var(--rule); }
+.filters { display: grid; gap: 2px; padding-block: 6px; }
+.topic-row { display: flex; gap: 8px; overflow-x: auto; padding: 6px 0; scrollbar-width: thin; align-items: center; }
+.row-label { flex: none; width: 68px; font: 600 0.72rem/1 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.topic-row button {
+  flex: none; font: 500 0.85rem/1 var(--font-body); padding: 8px 12px; border-radius: 999px;
+  border: 1px solid transparent; background: var(--chip); color: var(--ink); cursor: pointer;
+}
+.topic-row button .n { color: var(--muted); font-variant-numeric: tabular-nums; margin-left: 4px; }
+.topic-row button[aria-pressed="true"] { background: var(--surface); border-color: var(--accent); color: var(--accent); }
+
+main.wrap { padding-block: 28px 48px; display: grid; gap: 36px; }
+
+/* Top: lead + in breve */
+.top { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+.brief h2 { font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em; color: var(--accent); margin: 4px 0 6px; }
+.brief ol { list-style: none; margin: 0; padding: 0; }
+.brief li { border-top: 1px solid var(--rule); padding: 12px 0; display: grid; gap: 5px; }
+.brief a { font-family: var(--font-display); font-weight: 600; font-size: 1.12rem; line-height: 1.25; text-decoration: none; color: var(--ink); }
+.brief a:hover { color: var(--accent); }
+.where { display: inline-flex; align-items: center; gap: 6px; }
+.flag { width: 18px; height: 12px; flex: none; border-radius: 2px; box-shadow: 0 0 0 1px var(--rule); display: inline-block; }
+.kind { font: 600 0.68rem/1 var(--font-body); letter-spacing: 0.05em; text-transform: uppercase; padding: 4px 6px; border-radius: 4px; }
+.kind-comunita { color: #0b6b45; background: #e5f2eb; }
+.kind-istituzionale { color: #1d4f91; background: #e6edf8; }
+.kind-agenzia { color: #4f5a69; background: #eceff3; }
+:root[data-theme="dark"] .kind-comunita { color: #7fdcb0; background: #163a2b; }
+:root[data-theme="dark"] .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+:root[data-theme="dark"] .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .kind-comunita { color: #7fdcb0; background: #163a2b; }
+  :root:not([data-theme="light"]) .kind-istituzionale { color: #a9c6f0; background: #1c2d47; }
+  :root:not([data-theme="light"]) .kind-agenzia { color: #c3cbd5; background: #262f3a; }
+}
+.actions { display: flex; align-items: center; gap: 8px; margin-top: 2px; }
+.actions .read { margin-right: auto; }
+.empty { color: var(--muted); }
+
+/* Lead */
+.lead {
+  display: grid; gap: 14px;
+  background: var(--surface); border: 1px solid var(--rule); border-top: 4px solid var(--accent);
+  padding: 26px; border-radius: 4px;
+}
+.lead h2 {
+  font-family: var(--font-display); font-weight: 600; font-size: clamp(1.6rem, 3.2vw, 2.3rem);
+  line-height: 1.15; margin: 8px 0 0; text-wrap: balance;
+}
+.lead .summary { font-size: 1.05rem; margin: 0; max-width: 62ch; }
+.lead-side { display: flex; flex-direction: column; justify-content: space-between; gap: 16px; }
+
+/* Sections */
+.section h3 {
+  display: flex; align-items: baseline; gap: 10px;
+  font: 700 0.78rem/1 var(--font-body); text-transform: uppercase; letter-spacing: 0.1em;
+  color: var(--accent); margin: 0 0 14px; padding-bottom: 10px; border-bottom: 2px solid var(--ink);
+}
+.section h3 .count { color: var(--muted); font-weight: 500; letter-spacing: 0; text-transform: none; }
+.grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+[id^="n-"] { scroll-margin-top: 130px; }
+article.item { padding: 16px 0 18px; border-bottom: 1px solid var(--rule); display: grid; gap: 8px; align-content: start; }
+article.item h4 {
+  font-family: var(--font-display); font-weight: 600; font-size: 1.3rem; line-height: 1.22;
+  margin: 0; text-wrap: balance;
+}
+article.item p { margin: 0; max-width: 65ch; }
+.meta { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 0.8rem; color: var(--muted); }
+.meta .src { font-weight: 600; color: var(--ink); }
+.meta .sep { opacity: 0.5; }
+.read {
+  justify-self: start; display: inline-flex; gap: 6px; align-items: center;
+  font-weight: 600; font-size: 0.88rem; color: var(--accent); text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+.read:hover { border-bottom-color: var(--accent); }
+
+footer { border-top: 1px solid var(--rule); background: var(--surface); }
+.foot { padding: 22px 0 32px; display: grid; grid-template-columns: 2fr 1fr; gap: 24px; font-size: 0.88rem; color: var(--muted); }
+.foot p { margin: 0 0 8px; max-width: 70ch; }
+.foot strong { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .lead { padding: 20px; }
+  .top { grid-template-columns: 1fr; }
+  .logo { width: 46px; height: 46px; }
+  .row-label { width: auto; }
+  .grid { grid-template-columns: 1fr; }
+  .foot { grid-template-columns: 1fr; }
+  .edition { text-align: left; }
+  .archive, .tools { justify-content: flex-start; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .read, .iconbtn, .langbar button, .topic-row button { transition: color .15s, background-color .15s, border-color .15s; }
+}
+
+.pagenav a[data-nav="home"] { display: inline; }
+.page { max-width: 760px; padding-block: 32px 56px; }
+.page h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(2rem, 4vw, 2.6rem); line-height: 1.1; margin: 0 0 18px; }
+.page h2 { font-family: var(--font-display); font-weight: 700; font-size: 1.45rem; margin: 34px 0 10px; }
+.page p, .page li { font-size: 1.05rem; line-height: 1.6; }
+.page p:first-of-type strong { font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; line-height: 1.4; display: block; }
+.page ul, .page ol { padding-left: 1.3em; }
+.page li { margin: 6px 0; }
+.page a { color: var(--accent); }
+[data-lang] { display: none; }
+[data-lang].on { display: block; }
+.src-region { margin-top: 30px; }
+.src-region h2 { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; border-bottom: 2px solid var(--ink); padding-bottom: 6px; }
+.src-region h2 small { font: 500 0.85rem/1 var(--font-body); color: var(--muted); }
+.page .src-country { margin: 14px 0 4px; font: 700 0.78rem/1 var(--font-body); letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.src-list { list-style: none; padding: 0 !important; margin: 0; }
+.src-list li { display: flex; align-items: baseline; gap: 10px; border-bottom: 1px solid var(--rule); padding: 7px 0; margin: 0; font-size: 0.98rem; }
+.src-list li a { color: var(--ink); text-decoration: none; font-weight: 500; }
+.src-list li a:hover { color: var(--accent); text-decoration: underline; }
+.src-list .kind { margin-left: auto; flex: none; }
+.src-list { }
+.src-list li { flex-wrap: wrap; }
+.src-city { color: var(--muted); font-size: 0.88rem; }
+.page .src-list a.soc { font-size: 0.8rem; font-weight: 600; color: var(--accent); }
+.ar { display: block; font: 700 clamp(0.95rem, 2vw, 1.2rem)/1 var(--font-body); letter-spacing: 0.32em; text-transform: uppercase; color: var(--celeste); margin-top: 6px; }
+</style>
+</head>
+<body>
+<!-- Pagina generata da scripts/build_pages.py: non modificare a mano. -->
+<div class="tricolore" aria-hidden="true"><span></span><span></span><span></span></div>
+<header class="mast">
+  <div class="wrap">
+    <div class="mast-inner">
+      <a class="brand" href="/" style="text-decoration:none">
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="20.5" fill="none" stroke="currentColor" stroke-width="3.5"/><ellipse cx="24" cy="24" rx="8" ry="20.5" fill="none" stroke="currentColor" stroke-width="2.4"/><rect x="3.5" y="20" width="13.7" height="8" fill="#0b6b45"/><rect x="17.2" y="20" width="13.6" height="8" fill="#fff" stroke="#9aa3ae" stroke-width="0.8"/><rect x="30.8" y="20" width="13.7" height="8" fill="#b3122b"/></svg>
+        <div>
+          <span class="wordmark"><span class="h1">Diario Italia<span class="ar">Argentina</span></span><span class="rule3" aria-hidden="true"><span></span><span></span><span></span></span></span>
+          <p id="tagline">Las noticias de la colectividad italiana en Argentina, cada día</p>
+        </div>
+      </a>
+    </div>
+    <div class="langrow"><div class="langbar" role="group" aria-label="Idioma / Lingua" id="langbar"></div>
+      <nav class="pagenav" id="pagenav" aria-label="Diario Italia Argentina"><a href="/" data-nav="home">Noticias</a><a href="/chi-siamo" data-nav="chi-siamo">Quiénes somos</a><a href="/fonti" data-nav="fonti" aria-current="page">Fuentes</a><a href="/segnala" data-nav="segnala">Enviar una noticia</a></nav></div>
+  </div>
+</header>
+<main class="wrap page">
+<article data-lang="es" lang="es" class="on">
+<h1>Fuentes</h1>
+<p><strong>Cada número de Diario Italia Argentina nace del trabajo de los medios, las instituciones y las asociaciones de la colectividad italiana en todo el país.</strong></p>
+<p>Esta página las enumera por región, con el enlace a su sitio o a sus redes sociales. Si un tema le interesa, vaya a la fuente: allí encontrará la información completa, y seguirlas es la mejor manera de apoyarlas.</p>
+<p>Las fuentes son de tres tipos:</p>
+<ul>
+<li><strong>Colectividad</strong> – diarios, radios y portales de la colectividad, federaciones, sociedades italianas, asociaciones regionales y escuelas. Son el corazón de cada número.</li>
+<li><strong>Instituciones</strong> – Embajada, consulados, Comites, Istituti Italiani di Cultura y Cámaras de Comercio italianas, para las noticias de servicio y de interés para la colectividad.</li>
+<li><strong>Agencias y medios italianos</strong> – agencias especializadas en los italianos en el mundo, solo para lo que se refiere a Argentina.</li>
+</ul>
+<p>La lista crece todo el tiempo. ¿Su asociación o su medio no está? Escríbanos a <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a>.</p><section class="src-region"><h2>Todo el país <small>14 fuentes</small></h2><ul class="src-list">
+<li>FAPA – Federación de Asociaciones Piemontesas de Argentina<span class="src-city">Argentina</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://lasfogliatella.com.ar" target="_blank" rel="noopener">La Sfogliatella</a><span class="src-city">Argentina</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://feditalia.org.ar" target="_blank" rel="noopener">FEDITALIA</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/FeditaliaArgentina" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/FeditaliaArgentina" target="_blank" rel="noopener">Instagram</a><span class="kind kind-comunita">Colectividad</span></li>
+<li>L&#x27;Italiano<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://tribunaitaliana.com.ar" target="_blank" rel="noopener">Tribuna Italiana</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/tribunaitaliana" target="_blank" rel="noopener">Facebook</a><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://argentina.italiani.it" target="_blank" rel="noopener">italiani.it – Argentina</a><span class="src-city">Edizioni per città</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Gente d&#x27;Italia<span class="src-city">Montevideo / Río de la Plata</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://ccibaires.com.ar" target="_blank" rel="noopener">Cámara de Comercio Italiana en la República Argentina</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ccibaires" target="_blank" rel="noopener">Facebook</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://ambbuenosaires.esteri.it" target="_blank" rel="noopener">Embajada de Italia en Argentina</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ItalyinARG" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinargentina" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li>ENIT Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://ice.it" target="_blank" rel="noopener">ITA – Agenzia ICE Buenos Aires</a><span class="src-city">Buenos Aires</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://aise.it" target="_blank" rel="noopener">AISE – Agenzia Internazionale Stampa Estero</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agencia</span></li>
+<li><a href="https://ansa.it" target="_blank" rel="noopener">ANSA – America Latina</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agencia</span></li>
+<li><a href="https://italiachiamaitalia.it" target="_blank" rel="noopener">Italia Chiama Italia</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agencia</span></li>
+</ul></section>
+<section class="src-region"><h2>Buenos Aires y AMBA <small>14 fuentes</small></h2><ul class="src-list">
+<li>&quot;L&#x27;ombelico del mondo&quot; – Centro Umbro de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://dante.edu.ar" target="_blank" rel="noopener">Asociación Dante Alighieri de Buenos Aires</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Centro Umbro de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://clubitaliano.com.ar" target="_blank" rel="noopener">Club Italiano</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://fediba.org" target="_blank" rel="noopener">FEDIBA</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Hospital Italiano de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://radiolaluna.com.ar" target="_blank" rel="noopener">Programa italiano de Radio La Luna</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://comitesbuenosaires.org.ar" target="_blank" rel="noopener">Comites Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/BA.COMITES" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesbsas" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consbuenosaires.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ItaliaenBsAs" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italiaenbuenosaires" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://iicbuenosaires.esteri.it" target="_blank" rel="noopener">Istituto Italiano di Cultura de Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/iicbue" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/iicbaires" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://conslomasdezamora.esteri.it" target="_blank" rel="noopener">Agencia Consular de Italia en Lomas de Zamora</a><span class="src-city">Lomas de Zamora</span><a class="soc" href="https://www.facebook.com/ItalyInLomas" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinlomas" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://www.facebook.com/p/Comites-Lomas-de-Zamora-100083553062976" target="_blank" rel="noopener">Comites Lomas de Zamora</a><span class="src-city">Lomas de Zamora</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consmoron.esteri.it" target="_blank" rel="noopener">Agencia Consular de Italia en Morón</a><span class="src-city">Morón</span><a class="soc" href="https://www.facebook.com/p/Agenzia-Consolare-dItalia-Morn-61565752767198" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinmoron" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://comitesmoron.com.ar" target="_blank" rel="noopener">Comites Morón</a><span class="src-city">Morón</span><a class="soc" href="https://www.facebook.com/comitesmoronok" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesmoron" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+</ul></section>
+<section class="src-region"><h2>Provincia de Buenos Aires <small>7 fuentes</small></h2><ul class="src-list">
+<li>&quot;Desde Italia&quot; – Radio Universidad Nacional de La Plata<span class="src-city">La Plata</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://comitesbahiablanca.com" target="_blank" rel="noopener">Comites Bahía Blanca</a><span class="src-city">Bahía Blanca</span><a class="soc" href="https://www.facebook.com/comitesbahiablanca" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesbahiablanca" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consbahiablanca.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Bahía Blanca</a><span class="src-city">Bahía Blanca</span><a class="soc" href="https://www.facebook.com/ItalyinBBlanca" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinbblanca" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://comiteslaplata.org" target="_blank" rel="noopener">Comites La Plata</a><span class="src-city">La Plata</span><a class="soc" href="https://www.facebook.com/ComitesLaPlata" target="_blank" rel="noopener">Facebook</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://conslaplata.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en La Plata</a><span class="src-city">La Plata</span><a class="soc" href="https://www.facebook.com/CGItaliaLaPlata" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italiaenlaplata" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://www.facebook.com/p/Comites-Mdp-100064439241538" target="_blank" rel="noopener">Comites Mar del Plata</a><span class="src-city">Mar del Plata</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consmardelplata.esteri.it" target="_blank" rel="noopener">Consulado de Italia en Mar del Plata</a><span class="src-city">Mar del Plata</span><a class="soc" href="https://www.facebook.com/ItalyinMDP" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinmdp" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+</ul></section>
+<section class="src-region"><h2>Centro (Córdoba, Santa Fe) <small>46 fuentes</small></h2><ul class="src-list">
+<li><a href="https://www.facebook.com/profile.php?id=61562694350426" target="_blank" rel="noopener">Sociedad Italiana de Almafuerte</a><span class="src-city">Almafuerte</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/teatrocoliseobellville" target="_blank" rel="noopener">Sociedad Italiana – Teatro Coliseo</a><span class="src-city">Bell Ville</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/groups/633535689996192" target="_blank" rel="noopener">Asociaciones Italianas</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/bellasiciliacba" target="_blank" rel="noopener">Asociación Bella Sicilia</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/virgendelagracia" target="_blank" rel="noopener">Asociación Calabresa de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/IlDanteCordoba" target="_blank" rel="noopener">Asociación Dante Alighieri de Intercambio Cultural</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/emiliaromagnacba" target="_blank" rel="noopener">Asociación Emilia Romagna de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/arqueriaafp" target="_blank" rel="noopener">Asociación Familia Piemontesa de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100067350757272" target="_blank" rel="noopener">Asociación Familia Siciliana de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/lafriulanacba" target="_blank" rel="noopener">Asociación Friulana Cordobesa</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/assvenetacordoba" target="_blank" rel="noopener">Associazione Veneta di Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100066398900604" target="_blank" rel="noopener">Circolo Vicentini nel Mondo Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/groups/575274606785282" target="_blank" rel="noopener">Ciudadanía Italiana Córdoba Capital</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/ladantecordoba" target="_blank" rel="noopener">Escuela Bilingüe Dante Alighieri de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/ascociacionfriulana" target="_blank" rel="noopener">Escuela de Italiano – Asociación Friulana</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/familia.sicilianadecordoba" target="_blank" rel="noopener">Familia Siciliana de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/federdante.dellaprovdicordoba" target="_blank" rel="noopener">Federdante Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/groups/356811227692716" target="_blank" rel="noopener">Lucchesi nel Mondo Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.deanfunes" target="_blank" rel="noopener">Sociedad Italiana de Deán Funes</a><span class="src-city">Deán Funes</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/nostalgiapiemontesa" target="_blank" rel="noopener">Asociación Familia Piemontesa de General Cabrera</a><span class="src-city">General Cabrera</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedaditalianaHDO" target="_blank" rel="noopener">Sociedad Italiana Cesare Battisti</a><span class="src-city">Hernando</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedad.italiana.376" target="_blank" rel="noopener">Sociedad Italiana Conte di Torino</a><span class="src-city">Laboulaye</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/italianaespanolalr" target="_blank" rel="noopener">Asociación Italiana y Sociedad Española de Las Rosas</a><span class="src-city">Las Rosas</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100009406095285" target="_blank" rel="noopener">Sociedad Italiana de Las Varillas</a><span class="src-city">Las Varillas</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/SociedadItalianaMsJz" target="_blank" rel="noopener">Sociedad Italiana de Marcos Juárez</a><span class="src-city">Marcos Juárez</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.morteros" target="_blank" rel="noopener">Sociedad Italiana de Morteros</a><span class="src-city">Morteros</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100064524083257" target="_blank" rel="noopener">Sociedad Italiana Unione e Benevolenza</a><span class="src-city">Oncativo</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100013048543936" target="_blank" rel="noopener">Associazione Veneta di Río Cuarto</a><span class="src-city">Río Cuarto</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.riocuarto.3" target="_blank" rel="noopener">Sociedad Italiana de Río Cuarto</a><span class="src-city">Río Cuarto</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/SOCIEDADITALIANARIOTERCERO" target="_blank" rel="noopener">Sociedad Italiana de Río Tercero</a><span class="src-city">Río Tercero</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100068714312187" target="_blank" rel="noopener">Asociación Piemontesa de San Antonio de Litín</a><span class="src-city">San Antonio de Litín</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/FamiliaPiemontesaSanFrancisco" target="_blank" rel="noopener">Asociación Familia Piemontesa de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100093123265648" target="_blank" rel="noopener">Asociación Véneta de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/escueladantealighieridesanfrancisco" target="_blank" rel="noopener">Escuela Bilingüe Dante Alighieri de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/SocItalianasanfco" target="_blank" rel="noopener">Sociedad Italiana de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/AsociacionItalianaTeodelina" target="_blank" rel="noopener">Asociación Italiana de Teodelina</a><span class="src-city">Teodelina</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/asociaciondantealighierivcp" target="_blank" rel="noopener">Asociación Dante Alighieri de Villa Carlos Paz</a><span class="src-city">Villa Carlos Paz</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100041814055933" target="_blank" rel="noopener">Asociación Italiana Roma</a><span class="src-city">Villa Dolores</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/AsociacionItalianaVGB" target="_blank" rel="noopener">Asociación Italiana de Villa General Belgrano</a><span class="src-city">Villa General Belgrano</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/socitaliana.devm" target="_blank" rel="noopener">Sociedad Italiana de Villa María</a><span class="src-city">Villa María</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Comites Córdoba<span class="src-city">Córdoba</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://conscordoba.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Córdoba</a><span class="src-city">Córdoba</span><a class="soc" href="https://www.facebook.com/italyincordoba" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyincordobaok" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://iiccordoba.esteri.it" target="_blank" rel="noopener">Istituto Italiano di Cultura de Córdoba</a><span class="src-city">Córdoba</span><a class="soc" href="https://www.facebook.com/iic.cba" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/iic.cordoba" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://comitesros.org.ar" target="_blank" rel="noopener">Comites Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/comitesrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesrosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consrosario.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/italyinrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinrosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://italrosario.com" target="_blank" rel="noopener">Cámara de Comercio Italiana de Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/ccitalrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/camaraitalianaderosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+</ul></section>
+<section class="src-region"><h2>Noroeste <small>3 fuentes</small></h2><ul class="src-list">
+<li><a href="https://www.facebook.com/sociedaditaliana.catamarca" target="_blank" rel="noopener">Sociedad Italiana de Catamarca</a><span class="src-city">Catamarca</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/SociedadItalianaSaltaArg" target="_blank" rel="noopener">Sociedad Italiana de Salta</a><span class="src-city">Salta</span><span class="kind kind-comunita">Colectividad</span></li>
+<li><a href="https://www.facebook.com/sociedad.italianadetucuman" target="_blank" rel="noopener">Sociedad Italiana de Tucumán</a><span class="src-city">Tucumán</span><span class="kind kind-comunita">Colectividad</span></li>
+</ul></section>
+<section class="src-region"><h2>Noreste y Litoral <small>1 fuentes</small></h2><ul class="src-list">
+<li><a href="https://sociedaditalianapna.com.ar" target="_blank" rel="noopener">Sociedad Italiana de Paraná</a><span class="src-city">Paraná</span><a class="soc" href="https://www.facebook.com/sociedaditaliana.parana" target="_blank" rel="noopener">Facebook</a><span class="kind kind-comunita">Colectividad</span></li>
+</ul></section>
+<section class="src-region"><h2>Cuyo <small>4 fuentes</small></h2><ul class="src-list">
+<li><a href="https://fedime.com.ar" target="_blank" rel="noopener">FEDIME – Federación de Entidades Italianas de Cuyo</a><span class="src-city">Mendoza</span><a class="soc" href="https://www.facebook.com/FEDIME.Mendoza" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/festainpiazza" target="_blank" rel="noopener">Instagram</a><span class="kind kind-comunita">Colectividad</span></li>
+<li>Camera di Commercio Italiana di Mendoza<span class="src-city">Mendoza</span><span class="kind kind-istituzionale">Institución</span></li>
+<li>Comites Mendoza<span class="src-city">Mendoza</span><span class="kind kind-istituzionale">Institución</span></li>
+<li><a href="https://consmendoza.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Mendoza</a><span class="src-city">Mendoza</span><a class="soc" href="https://www.instagram.com/italyinmza" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Institución</span></li>
+</ul></section>
+<section class="src-region"><h2>Patagonia <small>4 fuentes</small></h2><ul class="src-list">
+<li>Asociación Italiana de Bariloche<span class="src-city">Bariloche</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Gazzettino Italiano Patagónico<span class="src-city">Neuquén</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Sociedad Italiana Duca degli Abruzzi<span class="src-city">Puerto Madryn</span><span class="kind kind-comunita">Colectividad</span></li>
+<li>Asociación Italiana de Trelew<span class="src-city">Trelew</span><span class="kind kind-comunita">Colectividad</span></li>
+</ul></section>
+</article>
+<article data-lang="it" lang="it">
+<h1>Fonti</h1>
+<p><strong>Ogni numero di Diario Italia Argentina nasce dal lavoro dei media, delle istituzioni e delle associazioni della collettività italiana in tutto il paese.</strong></p>
+<p>Questa pagina le elenca per regione, con il link al sito o ai profili social. Se un tema ti interessa, vai alla fonte: lì trovi l'informazione completa, e seguirle è il modo migliore per sostenerle.</p>
+<p>Le fonti sono di tre tipi:</p>
+<ul>
+<li><strong>Collettività</strong> – giornali, radio e portali della collettività, federazioni, società italiane, associazioni regionali e scuole. Sono il cuore di ogni numero.</li>
+<li><strong>Istituzioni</strong> – Ambasciata, consolati, Comites, Istituti Italiani di Cultura e Camere di commercio italiane, per le notizie di servizio e di interesse per la collettività.</li>
+<li><strong>Agenzie e media italiani</strong> – agenzie specializzate sugli italiani nel mondo, solo per ciò che riguarda l'Argentina.</li>
+</ul>
+<p>L'elenco cresce di continuo. La tua associazione o il tuo giornale non c'è? Scrivici a <a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a>.</p><section class="src-region"><h2>Tutto il paese <small>14 fonti</small></h2><ul class="src-list">
+<li>FAPA – Federación de Asociaciones Piemontesas de Argentina<span class="src-city">Argentina</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://lasfogliatella.com.ar" target="_blank" rel="noopener">La Sfogliatella</a><span class="src-city">Argentina</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://feditalia.org.ar" target="_blank" rel="noopener">FEDITALIA</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/FeditaliaArgentina" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/FeditaliaArgentina" target="_blank" rel="noopener">Instagram</a><span class="kind kind-comunita">Collettività</span></li>
+<li>L&#x27;Italiano<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://tribunaitaliana.com.ar" target="_blank" rel="noopener">Tribuna Italiana</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/tribunaitaliana" target="_blank" rel="noopener">Facebook</a><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://argentina.italiani.it" target="_blank" rel="noopener">italiani.it – Argentina</a><span class="src-city">Edizioni per città</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Gente d&#x27;Italia<span class="src-city">Montevideo / Río de la Plata</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://ccibaires.com.ar" target="_blank" rel="noopener">Cámara de Comercio Italiana en la República Argentina</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ccibaires" target="_blank" rel="noopener">Facebook</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://ambbuenosaires.esteri.it" target="_blank" rel="noopener">Embajada de Italia en Argentina</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ItalyinARG" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinargentina" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li>ENIT Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://ice.it" target="_blank" rel="noopener">ITA – Agenzia ICE Buenos Aires</a><span class="src-city">Buenos Aires</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://aise.it" target="_blank" rel="noopener">AISE – Agenzia Internazionale Stampa Estero</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agenzia</span></li>
+<li><a href="https://ansa.it" target="_blank" rel="noopener">ANSA – America Latina</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agenzia</span></li>
+<li><a href="https://italiachiamaitalia.it" target="_blank" rel="noopener">Italia Chiama Italia</a><span class="src-city">Italia</span><span class="kind kind-agenzia">Agenzia</span></li>
+</ul></section>
+<section class="src-region"><h2>Buenos Aires e AMBA <small>14 fonti</small></h2><ul class="src-list">
+<li>&quot;L&#x27;ombelico del mondo&quot; – Centro Umbro de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://dante.edu.ar" target="_blank" rel="noopener">Asociación Dante Alighieri de Buenos Aires</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Centro Umbro de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://clubitaliano.com.ar" target="_blank" rel="noopener">Club Italiano</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://fediba.org" target="_blank" rel="noopener">FEDIBA</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Hospital Italiano de Buenos Aires<span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://radiolaluna.com.ar" target="_blank" rel="noopener">Programa italiano de Radio La Luna</a><span class="src-city">Buenos Aires</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://comitesbuenosaires.org.ar" target="_blank" rel="noopener">Comites Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/BA.COMITES" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesbsas" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consbuenosaires.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/ItaliaenBsAs" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italiaenbuenosaires" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://iicbuenosaires.esteri.it" target="_blank" rel="noopener">Istituto Italiano di Cultura de Buenos Aires</a><span class="src-city">Buenos Aires</span><a class="soc" href="https://www.facebook.com/iicbue" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/iicbaires" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://conslomasdezamora.esteri.it" target="_blank" rel="noopener">Agencia Consular de Italia en Lomas de Zamora</a><span class="src-city">Lomas de Zamora</span><a class="soc" href="https://www.facebook.com/ItalyInLomas" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinlomas" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://www.facebook.com/p/Comites-Lomas-de-Zamora-100083553062976" target="_blank" rel="noopener">Comites Lomas de Zamora</a><span class="src-city">Lomas de Zamora</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consmoron.esteri.it" target="_blank" rel="noopener">Agencia Consular de Italia en Morón</a><span class="src-city">Morón</span><a class="soc" href="https://www.facebook.com/p/Agenzia-Consolare-dItalia-Morn-61565752767198" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinmoron" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://comitesmoron.com.ar" target="_blank" rel="noopener">Comites Morón</a><span class="src-city">Morón</span><a class="soc" href="https://www.facebook.com/comitesmoronok" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesmoron" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+</ul></section>
+<section class="src-region"><h2>Provincia di Buenos Aires <small>7 fonti</small></h2><ul class="src-list">
+<li>&quot;Desde Italia&quot; – Radio Universidad Nacional de La Plata<span class="src-city">La Plata</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://comitesbahiablanca.com" target="_blank" rel="noopener">Comites Bahía Blanca</a><span class="src-city">Bahía Blanca</span><a class="soc" href="https://www.facebook.com/comitesbahiablanca" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesbahiablanca" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consbahiablanca.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Bahía Blanca</a><span class="src-city">Bahía Blanca</span><a class="soc" href="https://www.facebook.com/ItalyinBBlanca" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinbblanca" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://comiteslaplata.org" target="_blank" rel="noopener">Comites La Plata</a><span class="src-city">La Plata</span><a class="soc" href="https://www.facebook.com/ComitesLaPlata" target="_blank" rel="noopener">Facebook</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://conslaplata.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en La Plata</a><span class="src-city">La Plata</span><a class="soc" href="https://www.facebook.com/CGItaliaLaPlata" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italiaenlaplata" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://www.facebook.com/p/Comites-Mdp-100064439241538" target="_blank" rel="noopener">Comites Mar del Plata</a><span class="src-city">Mar del Plata</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consmardelplata.esteri.it" target="_blank" rel="noopener">Consulado de Italia en Mar del Plata</a><span class="src-city">Mar del Plata</span><a class="soc" href="https://www.facebook.com/ItalyinMDP" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinmdp" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+</ul></section>
+<section class="src-region"><h2>Centro (Córdoba, Santa Fe) <small>46 fonti</small></h2><ul class="src-list">
+<li><a href="https://www.facebook.com/profile.php?id=61562694350426" target="_blank" rel="noopener">Sociedad Italiana de Almafuerte</a><span class="src-city">Almafuerte</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/teatrocoliseobellville" target="_blank" rel="noopener">Sociedad Italiana – Teatro Coliseo</a><span class="src-city">Bell Ville</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/groups/633535689996192" target="_blank" rel="noopener">Asociaciones Italianas</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/bellasiciliacba" target="_blank" rel="noopener">Asociación Bella Sicilia</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/virgendelagracia" target="_blank" rel="noopener">Asociación Calabresa de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/IlDanteCordoba" target="_blank" rel="noopener">Asociación Dante Alighieri de Intercambio Cultural</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/emiliaromagnacba" target="_blank" rel="noopener">Asociación Emilia Romagna de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/arqueriaafp" target="_blank" rel="noopener">Asociación Familia Piemontesa de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100067350757272" target="_blank" rel="noopener">Asociación Familia Siciliana de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/lafriulanacba" target="_blank" rel="noopener">Asociación Friulana Cordobesa</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/assvenetacordoba" target="_blank" rel="noopener">Associazione Veneta di Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100066398900604" target="_blank" rel="noopener">Circolo Vicentini nel Mondo Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/groups/575274606785282" target="_blank" rel="noopener">Ciudadanía Italiana Córdoba Capital</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/ladantecordoba" target="_blank" rel="noopener">Escuela Bilingüe Dante Alighieri de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/ascociacionfriulana" target="_blank" rel="noopener">Escuela de Italiano – Asociación Friulana</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/familia.sicilianadecordoba" target="_blank" rel="noopener">Familia Siciliana de Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/federdante.dellaprovdicordoba" target="_blank" rel="noopener">Federdante Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/groups/356811227692716" target="_blank" rel="noopener">Lucchesi nel Mondo Córdoba</a><span class="src-city">Córdoba</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.deanfunes" target="_blank" rel="noopener">Sociedad Italiana de Deán Funes</a><span class="src-city">Deán Funes</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/nostalgiapiemontesa" target="_blank" rel="noopener">Asociación Familia Piemontesa de General Cabrera</a><span class="src-city">General Cabrera</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedaditalianaHDO" target="_blank" rel="noopener">Sociedad Italiana Cesare Battisti</a><span class="src-city">Hernando</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedad.italiana.376" target="_blank" rel="noopener">Sociedad Italiana Conte di Torino</a><span class="src-city">Laboulaye</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/italianaespanolalr" target="_blank" rel="noopener">Asociación Italiana y Sociedad Española de Las Rosas</a><span class="src-city">Las Rosas</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100009406095285" target="_blank" rel="noopener">Sociedad Italiana de Las Varillas</a><span class="src-city">Las Varillas</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/SociedadItalianaMsJz" target="_blank" rel="noopener">Sociedad Italiana de Marcos Juárez</a><span class="src-city">Marcos Juárez</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.morteros" target="_blank" rel="noopener">Sociedad Italiana de Morteros</a><span class="src-city">Morteros</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100064524083257" target="_blank" rel="noopener">Sociedad Italiana Unione e Benevolenza</a><span class="src-city">Oncativo</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100013048543936" target="_blank" rel="noopener">Associazione Veneta di Río Cuarto</a><span class="src-city">Río Cuarto</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedaditaliana.riocuarto.3" target="_blank" rel="noopener">Sociedad Italiana de Río Cuarto</a><span class="src-city">Río Cuarto</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/SOCIEDADITALIANARIOTERCERO" target="_blank" rel="noopener">Sociedad Italiana de Río Tercero</a><span class="src-city">Río Tercero</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100068714312187" target="_blank" rel="noopener">Asociación Piemontesa de San Antonio de Litín</a><span class="src-city">San Antonio de Litín</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/FamiliaPiemontesaSanFrancisco" target="_blank" rel="noopener">Asociación Familia Piemontesa de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100093123265648" target="_blank" rel="noopener">Asociación Véneta de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/escueladantealighieridesanfrancisco" target="_blank" rel="noopener">Escuela Bilingüe Dante Alighieri de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/SocItalianasanfco" target="_blank" rel="noopener">Sociedad Italiana de San Francisco</a><span class="src-city">San Francisco</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/AsociacionItalianaTeodelina" target="_blank" rel="noopener">Asociación Italiana de Teodelina</a><span class="src-city">Teodelina</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/asociaciondantealighierivcp" target="_blank" rel="noopener">Asociación Dante Alighieri de Villa Carlos Paz</a><span class="src-city">Villa Carlos Paz</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/profile.php?id=100041814055933" target="_blank" rel="noopener">Asociación Italiana Roma</a><span class="src-city">Villa Dolores</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/AsociacionItalianaVGB" target="_blank" rel="noopener">Asociación Italiana de Villa General Belgrano</a><span class="src-city">Villa General Belgrano</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/socitaliana.devm" target="_blank" rel="noopener">Sociedad Italiana de Villa María</a><span class="src-city">Villa María</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Comites Córdoba<span class="src-city">Córdoba</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://conscordoba.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Córdoba</a><span class="src-city">Córdoba</span><a class="soc" href="https://www.facebook.com/italyincordoba" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyincordobaok" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://iiccordoba.esteri.it" target="_blank" rel="noopener">Istituto Italiano di Cultura de Córdoba</a><span class="src-city">Córdoba</span><a class="soc" href="https://www.facebook.com/iic.cba" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/iic.cordoba" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://comitesros.org.ar" target="_blank" rel="noopener">Comites Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/comitesrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/comitesrosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consrosario.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/italyinrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/italyinrosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://italrosario.com" target="_blank" rel="noopener">Cámara de Comercio Italiana de Rosario</a><span class="src-city">Rosario</span><a class="soc" href="https://www.facebook.com/ccitalrosario" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/camaraitalianaderosario" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+</ul></section>
+<section class="src-region"><h2>Nord-ovest <small>3 fonti</small></h2><ul class="src-list">
+<li><a href="https://www.facebook.com/sociedaditaliana.catamarca" target="_blank" rel="noopener">Sociedad Italiana de Catamarca</a><span class="src-city">Catamarca</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/SociedadItalianaSaltaArg" target="_blank" rel="noopener">Sociedad Italiana de Salta</a><span class="src-city">Salta</span><span class="kind kind-comunita">Collettività</span></li>
+<li><a href="https://www.facebook.com/sociedad.italianadetucuman" target="_blank" rel="noopener">Sociedad Italiana de Tucumán</a><span class="src-city">Tucumán</span><span class="kind kind-comunita">Collettività</span></li>
+</ul></section>
+<section class="src-region"><h2>Nord-est e Litorale <small>1 fonti</small></h2><ul class="src-list">
+<li><a href="https://sociedaditalianapna.com.ar" target="_blank" rel="noopener">Sociedad Italiana de Paraná</a><span class="src-city">Paraná</span><a class="soc" href="https://www.facebook.com/sociedaditaliana.parana" target="_blank" rel="noopener">Facebook</a><span class="kind kind-comunita">Collettività</span></li>
+</ul></section>
+<section class="src-region"><h2>Cuyo <small>4 fonti</small></h2><ul class="src-list">
+<li><a href="https://fedime.com.ar" target="_blank" rel="noopener">FEDIME – Federación de Entidades Italianas de Cuyo</a><span class="src-city">Mendoza</span><a class="soc" href="https://www.facebook.com/FEDIME.Mendoza" target="_blank" rel="noopener">Facebook</a><a class="soc" href="https://www.instagram.com/festainpiazza" target="_blank" rel="noopener">Instagram</a><span class="kind kind-comunita">Collettività</span></li>
+<li>Camera di Commercio Italiana di Mendoza<span class="src-city">Mendoza</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li>Comites Mendoza<span class="src-city">Mendoza</span><span class="kind kind-istituzionale">Istituzione</span></li>
+<li><a href="https://consmendoza.esteri.it" target="_blank" rel="noopener">Consulado General de Italia en Mendoza</a><span class="src-city">Mendoza</span><a class="soc" href="https://www.instagram.com/italyinmza" target="_blank" rel="noopener">Instagram</a><span class="kind kind-istituzionale">Istituzione</span></li>
+</ul></section>
+<section class="src-region"><h2>Patagonia <small>4 fonti</small></h2><ul class="src-list">
+<li>Asociación Italiana de Bariloche<span class="src-city">Bariloche</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Gazzettino Italiano Patagónico<span class="src-city">Neuquén</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Sociedad Italiana Duca degli Abruzzi<span class="src-city">Puerto Madryn</span><span class="kind kind-comunita">Collettività</span></li>
+<li>Asociación Italiana de Trelew<span class="src-city">Trelew</span><span class="kind kind-comunita">Collettività</span></li>
+</ul></section>
+</article>
+</main>
+<footer>
+  <div class="wrap foot">
+    <div><p class="footnav" id="footnav"></p></div>
+    <div><p><a href="mailto:info@diarioitalia.org">info@diarioitalia.org</a></p></div>
+  </div>
+</footer>
+<script>
+const D = {"nav": {"es": {"home": "Noticias", "chi-siamo": "Quiénes somos", "fonti": "Fuentes", "segnala": "Enviar una noticia", "privacy": "Privacidad y aviso legal"}, "it": {"home": "Notizie", "chi-siamo": "Chi siamo", "fonti": "Fonti", "segnala": "Segnala una notizia", "privacy": "Privacy e note legali"}}, "tagline": {"es": "Las noticias de la colectividad italiana en Argentina, cada día", "it": "Le notizie della collettività italiana in Argentina, ogni giorno"}, "titles": {"es": "Fuentes", "it": "Fonti"}, "slug": "fonti"};
+const LANGS = [["es", "Español"], ["it", "Italiano"]];
+function pick() {
+  const h = (location.hash || "").replace("#", "");
+  if (D.nav[h]) return h;
+  try { const s = localStorage.getItem("diario-ar-lang"); if (D.nav[s]) return s; } catch (e) {}
+  return "es";
+}
+function render(lang) {
+  document.documentElement.lang = lang;
+  document.title = D.titles[lang] + " · Diario Italia Argentina";
+  document.getElementById("tagline").textContent = D.tagline[lang];
+  document.querySelectorAll("[data-lang]").forEach(a => a.classList.toggle("on", a.dataset.lang === lang));
+  document.querySelectorAll("#pagenav [data-nav]").forEach(a => {
+    a.textContent = D.nav[lang][a.dataset.nav];
+    a.href = (a.dataset.nav === "home" ? "/" : "/" + a.dataset.nav) + "#" + lang;
+  });
+  const fn = document.getElementById("footnav"); fn.textContent = "";
+  ["home", "chi-siamo", "fonti", "segnala", "privacy"].forEach((p, i) => {
+    if (i) fn.append(" · ");
+    const a = document.createElement("a"); a.href = (p === "home" ? "/" : "/" + p) + "#" + lang; a.textContent = D.nav[lang][p]; fn.append(a);
+  });
+  const bar = document.getElementById("langbar"); bar.textContent = "";
+  LANGS.forEach(([code, name]) => {
+    const b = document.createElement("button");
+    b.type = "button"; b.textContent = code.toUpperCase(); b.title = name;
+    b.setAttribute("aria-pressed", String(code === lang));
+    b.onclick = () => { try { localStorage.setItem("diario-ar-lang", code); } catch (e) {} history.replaceState(null, "", "#" + code); render(code); };
+    bar.append(b);
+  });
+  document.querySelector(".brand").href = "/#" + lang;
+}
+render(pick());
+window.addEventListener("hashchange", () => render(pick()));
+</script>
+</body>
+</html>
