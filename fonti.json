@@ -470,7 +470,7 @@
   "area": "nacional",
   "sito": null,
   "facebook": null,
-  "instagram": null,
+  "instagram": "https://www.instagram.com/federacionpiemontesaargentina",
   "stato": "Da verificare",
   "gruppo": "1 – Media e associazioni"
  },
@@ -503,7 +503,7 @@
   "area": "amba",
   "sito": null,
   "facebook": null,
-  "instagram": null,
+  "instagram": "https://www.instagram.com/hospitalitalianodebuenosaires",
   "stato": "Da verificare",
   "gruppo": "1 – Media e associazioni"
  },
@@ -514,7 +514,7 @@
   "area": "amba",
   "sito": "https://clubitaliano.com.ar",
   "facebook": null,
-  "instagram": null,
+  "instagram": "https://www.instagram.com/clubitalianobsas",
   "stato": "Da verificare",
   "gruppo": "1 – Media e associazioni"
  },
@@ -583,7 +583,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/SOCIEDADITALIANARIOTERCERO",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/sociedaditalianario",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -594,7 +594,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/sociedaditaliana.riocuarto.3",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/sociedaditalianariocuarto",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -605,7 +605,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/SocItalianasanfco",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/sociedaditalianasanfco",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -671,7 +671,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/sociedaditaliana.morteros",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/sociedaditalianamorteros",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -682,7 +682,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/AsociacionItalianaVGB",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/asociacion_italiana_vgb",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -727,7 +727,7 @@
   "area": "noa",
   "sito": null,
   "facebook": "https://www.facebook.com/sociedad.italianadetucuman",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/sociedaditalianadetucuman",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -760,7 +760,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/IlDanteCordoba",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/ladantecordoba",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -771,7 +771,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/escueladantealighieridesanfrancisco",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/scuoladantealighierisanfco",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -782,7 +782,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/ladantecordoba",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/escueladantecordoba",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -826,7 +826,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/arqueriaafp",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/afapieco",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -837,7 +837,7 @@
   "area": "centro",
   "sito": null,
   "facebook": "https://www.facebook.com/FamiliaPiemontesaSanFrancisco",
-  "instagram": null,
+  "instagram": "https://www.instagram.com/familiapiemontesasanfrancisco",
   "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
@@ -1015,8 +1015,8 @@
   "area": "patagonia",
   "sito": null,
   "facebook": null,
-  "instagram": null,
-  "stato": "Da verificare",
+  "instagram": "https://www.instagram.com/asociacionitalianabariloche",
+  "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  },
  {
@@ -1039,6 +1039,149 @@
   "facebook": null,
   "instagram": null,
   "stato": "Da verificare",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana de Socorros Mutuos de Posadas",
+  "tipo": "Associazione",
+  "citta": "Posadas",
+  "area": "nea",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/sociedaditaliana.posadas",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana de Villa del Rosario",
+  "tipo": "Associazione",
+  "citta": "Villa del Rosario",
+  "area": "centro",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/sociedaditalianavdr",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana de Salto Grande",
+  "tipo": "Associazione",
+  "citta": "Salto Grande",
+  "area": "centro",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/sociedaditaliana.sg",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana de María Juana",
+  "tipo": "Associazione",
+  "citta": "María Juana",
+  "area": "centro",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/sociedaditalianamariajuana",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana Patria y Trabajo",
+  "tipo": "Associazione",
+  "citta": "Ataliva",
+  "area": "centro",
+  "sito": null,
+  "facebook": "https://www.facebook.com/ssmmataliva.sociedaditaliana",
+  "instagram": "https://www.instagram.com/mutual.ataliva",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Italiana de Luján de Cuyo",
+  "tipo": "Associazione",
+  "citta": "Luján de Cuyo",
+  "area": "cuyo",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/sociedaditalianadelujan",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Sociedad Friulana de Paraná",
+  "tipo": "Associazione regionale",
+  "citta": "Paraná",
+  "area": "nea",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/friulanaparana",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Familia Friulana de La Plata",
+  "tipo": "Associazione regionale",
+  "citta": "La Plata",
+  "area": "bonaerense",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/familiafriulanalp",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Asociación Calabresa de Buenos Aires",
+  "tipo": "Associazione regionale",
+  "citta": "Buenos Aires",
+  "area": "amba",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/asociacioncalabresaok",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Asociación Familia Calabresa de Rosario",
+  "tipo": "Associazione regionale",
+  "citta": "Rosario",
+  "area": "centro",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/asociacionfamiliacalabresa",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Dante Alighieri de La Plata",
+  "tipo": "Cultura",
+  "citta": "La Plata",
+  "area": "bonaerense",
+  "sito": null,
+  "facebook": "https://www.facebook.com/dalighieri.laplata",
+  "instagram": "https://www.instagram.com/ladante_lp",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Dante Alighieri de Villa María",
+  "tipo": "Cultura",
+  "citta": "Villa María",
+  "area": "centro",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/ladantevillamaria",
+  "stato": "Account confermato",
+  "gruppo": "1 – Media e associazioni"
+ },
+ {
+  "testata": "Dante Alighieri de San Isidro",
+  "tipo": "Cultura",
+  "citta": "San Isidro",
+  "area": "amba",
+  "sito": null,
+  "facebook": null,
+  "instagram": "https://www.instagram.com/dantesanisidro",
+  "stato": "Account confermato",
   "gruppo": "1 – Media e associazioni"
  }
 ]
