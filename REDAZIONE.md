@@ -37,6 +37,7 @@ Le fonti sono in `fonti.json` (campo `gruppo`, campo `area` per la regione, camp
 ## Selezione
 
 - Varietà di regioni e di temi; al massimo 3 notizie dalla stessa fonte.
+- **Equilibrio regionale.** Il peso delle regioni deve seguire, a grandi linee, quello della collettività (italiani residenti per consolato, ISTAT 2024: Buenos Aires 335mila, Rosario 142mila, Córdoba 106mila, La Plata 87mila, su 987mila in Argentina). Orientativamente, sul totale delle notizie regionali: AMBA circa 35–40%, resto della provincia di Buenos Aires circa 20%, centro (Córdoba, Santa Fe, Entre Ríos) circa 25–30%, e il resto fra Cuyo, NOA, NEA e Patagonia. Le fonti social sono più numerose a Córdoba: **non più di 1 notizia su 3 dalla regione centro**, e Córdoba da sola non più di 1 su 5. Se una regione grande (AMBA, bonaerense) è scoperta, fare una ricerca in più su quella regione prima di chiudere il numero.
 - Escludere notizie già pubblicate nei numeri precedenti (controllare `public/data/archive/`).
 - Eventi: preferire quelli dei prossimi giorni o appena avvenuti; non pubblicare eventi già passati da più di 3 giorni.
 - Gli articoli di opinione vanno presentati come commento, attribuendo la posizione all'autore.
