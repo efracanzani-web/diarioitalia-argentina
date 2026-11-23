@@ -44,7 +44,7 @@ Es la edición argentina de [Diario Italia](https://diarioitalia.org), el diario
 
 ## Contacto
 
-Avisos, correcciones y propuestas de colaboración: {MAIL}.
+Avisos, correcciones y propuestas de colaboración: {MAIL}. Síganos también en Instagram y Facebook: @diarioitalianews.
 """,
 "it": f"""# Chi siamo
 
@@ -71,7 +71,7 @@ L'Argentina ospita la più grande collettività di cittadini italiani al mondo f
 
 ## Contatti
 
-Segnalazioni, correzioni e proposte di collaborazione: {MAIL}.
+Segnalazioni, correzioni e proposte di collaborazione: {MAIL}. Seguici anche su Instagram e Facebook: @diarioitalianews.
 """,
 }
 

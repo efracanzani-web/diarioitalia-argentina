@@ -83,7 +83,7 @@ Vedi `public/data/news.json`. Campi di ogni notizia: `id` (slug unico), `topic`,
 2. Copiarlo anche in `public/data/archive/AAAA-MM-GG.json`.
 3. Aggiungere la data in testa a `dates` in `public/data/archive/index.json`.
 4. Controllare: `python3 scripts/validate.py public/data/news.json` deve rispondere `OK`.
-5. Materiale social: scegliere 4 notizie adatte ai social (interesse ampio, regioni diverse, toni positivi o informativi; niente cronaca nera, polemiche politiche o lutti) ed eseguire `python3 scripts/social.py id1 id2 id3 id4`. Controllare l'immagine `public/social/AAAA-MM-GG.png` prima del commit.
+5. Materiale social (storia verticale 1080x1920 per @diarioitalianews; il feed resta all'edizione mondiale): scegliere 4 notizie adatte ai social (interesse ampio, regioni diverse, toni positivi o informativi; niente cronaca nera, polemiche politiche o lutti) ed eseguire `python3 scripts/social.py id1 id2 id3 id4`. Controllare l'immagine `public/social/AAAA-MM-GG.png` prima del commit.
 6. Commit su `main` e push: Cloudflare Workers pubblica automaticamente in 1–2 minuti.
 
 ## Pagine statiche

@@ -6,7 +6,7 @@ Uso:
     python3 scripts/social.py id1 id2 id3 id4 # notizie scelte dalla redazione
 
 Produce in public/social/:
-    AAAA-MM-GG.png   immagine 1080x1350 per il feed (Instagram/Facebook)
+    AAAA-MM-GG.png   immagine 1080x1920 per le storie (Instagram/Facebook) di @diarioitalianews
     AAAA-MM-GG.txt   testo del post
     AAAA-MM-GG.html  pagina per scaricare l'immagine e copiare il testo dal telefono
     latest.png / latest.txt / latest.html / latest.json  copia dell'ultimo numero
@@ -24,7 +24,7 @@ NEWS = ROOT / "public" / "data" / "news.json"
 OUT = ROOT / "public" / "social"
 SITE = "https://argentina.diarioitalia.org"
 
-W, H = 1080, 1350
+W, H = 1080, 1920  # formato storia; in alto e in basso ~250 px restano liberi per l'interfaccia di Instagram
 S = 2  # supersampling
 INK, PAPER, MUTED, SOFT = "#15202e", "#f6f7f9", "#5a6575", "#3d4756"
 GREEN, RED, GREY = "#0b6b45", "#b3122b", "#d9dde3"
@@ -162,14 +162,18 @@ def render(picks, date, total, path):
 
     L, R = 80 * S, (W - 80) * S
     y_, m_, g_ = (int(p) for p in date.split("-"))
-    d.text((L, 96 * S), f"HOY · OGGI — {g_} DE {MESES[m_ - 1].upper()} DE {y_}", font=font("sans-bold", 26), fill=RED)
-    d.text((L, 140 * S), "En el número de hoy", font=font("serif-bold", 72), fill=INK)
+    fb0 = font("sans-bold", 34)
+    draw_logo(d, L, 236 * S, 56 * S)
+    d.text((L + 72 * S, 246 * S), "Diario Italia", font=fb0, fill=INK)
+    d.text((L + 72 * S + d.textlength("Diario Italia ", font=fb0), 246 * S), "ARGENTINA", font=fb0, fill=CELESTE)
+    d.text((L, 340 * S), f"HOY · OGGI — {g_} DE {MESES[m_ - 1].upper()} DE {y_}", font=font("sans-bold", 26), fill=RED)
+    d.text((L, 384 * S), "En el número de hoy", font=font("serif-bold", 72), fill=INK)
 
-    y = 262 * S
+    y = 506 * S
     card_w = R - L
     pad = 32 * S
     gap = 22 * S
-    title_size = 40
+    title_size = 44
     while True:  # riduce il corpo se le schede non entrano
         ft = font("serif-bold", title_size)
         fl = font("sans-bold", 23)
@@ -179,7 +183,7 @@ def render(picks, date, total, path):
             hgt = pad + 30 * S + len(lines) * int(title_size * 1.24 * S) + pad - 8 * S
             blocks.append((it, lines, hgt))
         needed = sum(b[2] for b in blocks) + gap * (len(blocks) - 1)
-        if y + needed <= 1130 * S or title_size <= 30:
+        if y + needed <= 1540 * S or title_size <= 30:
             break
         title_size -= 2
 
@@ -196,16 +200,13 @@ def render(picks, date, total, path):
 
     rest = total - len(picks)
     if rest > 0:
-        d.text((L, y + 6 * S), f"+ {rest} noticias en español e italiano en argentina.diarioitalia.org", font=font("sans", 30), fill=SOFT)
+        d.text((L, y + 6 * S), f"+ {rest} noticias más en español e italiano", font=font("sans", 32), fill=SOFT)
 
-    fy = (H - 64 - 46) * S
-    draw_logo(d, L, fy, 46 * S)
-    fb = font("sans-bold", 28)
-    d.text((L + 60 * S, fy + 8 * S), "Diario Italia", font=fb, fill=INK)
-    d.text((L + 60 * S + d.textlength("Diario Italia ", font=fb), fy + 8 * S), "ARGENTINA", font=fb, fill=CELESTE)
-    fs = font("sans", 26)
-    txt = "argentina.diarioitalia.org"
-    d.text((R - d.textlength(txt, font=fs), fy + 8 * S), txt, font=fs, fill=MUTED)
+    fy = 1630 * S
+    d.rounded_rectangle([L, fy, R, fy + 96 * S], radius=48 * S, fill=INK)
+    fs = font("sans-bold", 32)
+    txt = "Todas las noticias en argentina.diarioitalia.org"
+    d.text(((W * S - d.textlength(txt, font=fs)) // 2, fy + 26 * S), txt, font=fs, fill="#ffffff")
 
     img.resize((W, H), Image.LANCZOS).save(path, optimize=True)
 
@@ -230,7 +231,7 @@ def page(date, text):
 img{{width:100%;border-radius:12px;box-shadow:0 2px 10px #0002}}a.b,button{{display:block;width:100%;box-sizing:border-box;text-align:center;
 padding:14px;margin:14px 0;border-radius:10px;border:0;background:#15202e;color:#fff;font-size:17px;font-weight:600;text-decoration:none}}
 pre{{white-space:pre-wrap;background:#fff;padding:16px;border-radius:10px;border:1px solid #d9dde3;font:15px/1.5 system-ui,Arial,sans-serif}}</style></head>
-<body><h2>Post del {date} · Argentina</h2><img src="{date}.png" alt="Immagine del post">
+<body><h2>Historia del {date} · Argentina</h2><img src="{date}.png" alt="Immagine del post">
 <a class="b" href="{date}.png" download="DiarioItaliaArgentina_{date}.png">Descargar imagen · Scarica immagine</a>
 <button id="c">Copiar texto · Copia testo</button><pre id="t">{t}</pre>
 <script>document.getElementById('c').onclick=async function(){{try{{await navigator.clipboard.writeText(document.getElementById('t').textContent);this.textContent='Copiado ✓ · Copiato ✓'}}catch(e){{var r=document.createRange();r.selectNodeContents(document.getElementById('t'));var s=getSelection();s.removeAllRanges();s.addRange(r)}}}}</script>
