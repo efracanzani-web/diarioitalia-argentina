@@ -1,159 +1,273 @@
 {
- "edition": "2026-11-23",
- "updated": "2026-11-23T07:00:00-03:00",
- "sources_monitored": 93,
+ "edition": "2026-11-24",
+ "updated": "2026-11-24T07:00:00-03:00",
+ "sources_monitored": 121,
  "items": [
   {
-   "id": "comites-buenos-aires-lista-uniti",
+   "id": "comites-lomas-como-votar-duplicados",
    "topic": "politica",
-   "source": "Agencia DIB",
-   "place": "Buenos Aires",
+   "source": "Lomas Conectado",
+   "place": "Lomas de Zamora",
    "country": "AR",
    "kind": "comunita",
    "date": "2026-11-19",
-   "url": "https://dib.com.ar/politica/comites-2026-una-lista-se-suma-la-disputa-la-representacion-italiana-buenos-aires-n57425",
+   "url": "https://lomasconectado.com/2026/11/19/elecciones-comites-2026-lomas/",
    "area": "amba",
    "title": {
-    "es": "Comites Buenos Aires: se suma la lista UNITI, once listas y unos 190 candidatos en la zona",
-    "it": "Comites Buenos Aires: in campo anche la lista UNITI, undici liste e circa 190 candidati nell'area"
+    "es": "Comites en Lomas de Zamora: cómo votar y dónde pedir el duplicado del sobre",
+    "it": "Comites a Lomas de Zamora: come votare e dove chiedere il duplicato del plico"
    },
    "summary": {
-    "es": "La lista UNITI (Uniti Italia + Argentina), encabezada por José Francisco Palmiotti junto al médico Vicente Labonia, presenta 22 candidatos para el Comites de la circunscripción consular de Buenos Aires, que abarca la Capital y 24 municipios del conurbano. Entre Buenos Aires, Lomas de Zamora y Morón compiten once listas. Se vota por correo: los sobres deben llegar al consulado antes del 4 de diciembre inclusive.",
-    "it": "La lista UNITI (Uniti Italia + Argentina), guidata da José Francisco Palmiotti con il medico Vicente Labonia, presenta 22 candidati per il Comites della circoscrizione consolare di Buenos Aires, che comprende la capitale e 24 comuni della provincia. Fra Buenos Aires, Lomas de Zamora e Morón corrono undici liste. Si vota per posta: i plichi devono arrivare al consolato entro il 4 dicembre."
+    "es": "Los italianos inscriptos en el padrón de Lomas de Zamora votan por correo y el sobre debe llegar al consulado antes del 4 de diciembre. Se marca una lista y se pueden indicar hasta cuatro preferencias. Quien no recibió el material puede pedir un duplicado en la Agencia Consular de avenida Meeks 701, Temperley, de lunes a viernes y también el sábado 28 y el domingo 29 de noviembre.",
+    "it": "Gli italiani iscritti negli elenchi di Lomas de Zamora votano per posta e il plico deve arrivare al consolato entro il 4 dicembre. Si segna una lista e si possono indicare fino a quattro preferenze. Chi non ha ricevuto il materiale può chiedere un duplicato all'Agenzia consolare di avenida Meeks 701, a Temperley, dal lunedì al venerdì e anche sabato 28 e domenica 29 novembre."
    },
    "lead": true
   },
   {
-   "id": "mar-del-plata-settimana-cucina-italiana",
-   "topic": "comunita",
-   "source": "Infobrisas",
-   "place": "Mar del Plata",
+   "id": "comites-buenos-aires-horarios-duplicados",
+   "topic": "politica",
+   "source": "La Rosca Electoral",
+   "place": "Buenos Aires",
    "country": "AR",
    "kind": "comunita",
-   "date": "2026-11-19",
-   "url": "https://www.infobrisas.com/noticias/2026/11/19/115422-como-sigue-en-mar-del-plata-la-settimana-della-cucina-italiana-nel-mondo",
-   "area": "bonaerense",
+   "date": "2026-11-15",
+   "url": "https://laroscaelectoral.com.ar/noticias/comites-buenos-aires-duplicados-sobres-horarios-20-noviembre-2026",
+   "area": "amba",
    "title": {
-    "es": "Mar del Plata: chefs de Parma, masterclass y cocina en familia por la Semana de la Cocina Italiana",
-    "it": "Mar del Plata: chef da Parma, masterclass e cucina in famiglia per la Settimana della cucina italiana"
+    "es": "Consulado de Buenos Aires: horarios para retirar el duplicado del sobre del Comites",
+    "it": "Consolato di Buenos Aires: gli orari per ritirare il duplicato del plico del Comites"
    },
    "summary": {
-    "es": "El presidente del Comites, Alberto Becchi, presentó el programa local de la Semana (16 al 23 de noviembre). Los chefs Filippo Cavalli y Marisa Maffeo, del consorcio Parma Quality, dan una masterclass para estudiantes de gastronomía y un encuentro de cocina para las familias de las asociaciones regionales. El domingo 22 la Dante Alighieri organiza Degustarte en el Torreón del Monje.",
-    "it": "Il presidente del Comites Alberto Becchi ha presentato il programma locale della Settimana (16-23 novembre). Gli chef Filippo Cavalli e Marisa Maffeo, del consorzio Parma Quality, tengono una masterclass per studenti di gastronomia e un incontro di cucina per le famiglie delle associazioni regionali. Domenica 22 la Dante Alighieri organizza Degustarte al Torreón del Monje."
+    "es": "El Consulado General en Buenos Aires entrega duplicados del sobre electoral desde el 20 de noviembre, de 9 a 13 y de 14 a 16, hasta el 4 de diciembre. También abrirá el sábado 28 y el domingo 29 de noviembre, de 10 a 13. El trámite es personal y requiere pasaporte o DNI vigente.",
+    "it": "Il Consolato generale di Buenos Aires consegna i duplicati del plico elettorale dal 20 novembre, dalle 9 alle 13 e dalle 14 alle 16, fino al 4 dicembre. Sarà aperto anche sabato 28 e domenica 29 novembre, dalle 10 alle 13. La richiesta è personale e serve un passaporto o un DNI validi."
    }
   },
   {
-   "id": "mendoza-semana-cocina-italiana",
+   "id": "abruzzo-unione-benevolenza-espectaculo",
    "topic": "cultura",
-   "source": "Municipalidad de Mendoza",
-   "place": "Mendoza",
+   "source": "Istituto Italiano di Cultura de Buenos Aires",
+   "place": "Buenos Aires",
    "country": "AR",
-   "area": "cuyo",
    "kind": "istituzionale",
-   "date": "2026-11-18",
-   "url": "https://prensa.ciudaddemendoza.gob.ar/2026/11/18/la-ciudad-convoca-a-restaurantes-para-participar-de-la-semana-de-la-cocina-italiana/",
+   "date": "2026-11-23",
+   "url": "https://iicbuenosaires.esteri.it/es/news/dall_istituto/2026/11/abruzzo-un-corazon-en-dos-tierras/",
+   "area": "amba",
    "title": {
-    "es": "Mendoza tendrá su Semana de la Cocina Italiana del 30 de noviembre al 6 de diciembre",
-    "it": "Mendoza avrà la sua Settimana della cucina italiana dal 30 novembre al 6 dicembre"
+    "es": "Música y danzas de los Abruzos en la Unione e Benevolenza",
+    "it": "Musica e danze d'Abruzzo all'Unione e Benevolenza"
    },
    "summary": {
-    "es": "La Municipalidad de Mendoza y el Consulado General de Italia organizan en la capital provincial la XI Semana de la Cocina Italiana en el Mundo, con el lema «La cocina italiana: patrimonio, territorios y cultura». Los restaurantes adheridos ofrecerán platos tradicionales, menús temáticos, degustaciones y maridajes, con promoción conjunta del Consulado y del municipio.",
-    "it": "Il Comune di Mendoza e il Consolato Generale d'Italia organizzano nel capoluogo la XI Settimana della cucina italiana nel mondo, con il motto «La cucina italiana: patrimonio, territori e cultura». I ristoranti aderenti proporranno piatti tradizionali, menù a tema, degustazioni e abbinamenti con i vini, con una promozione congiunta di Consolato e Comune."
+    "es": "El domingo 29 de noviembre a las 16 la sede histórica de la Unione e Benevolenza recibe «Abruzzo, un cuore in due terre», con música, danza y tradiciones populares. Actúan el músico Simone Pieramico y la Compagnia Tradizionale Val d'Abruzzo de Rosario, junto a la Familia Abruzzese de Rosario e Italia Tricolore Radio. La entrada es libre; se pide llevar alimentos no perecederos para el Cottolengo Don Orione.",
+    "it": "Domenica 29 novembre alle 16 la sede storica dell'Unione e Benevolenza ospita «Abruzzo, un cuore in due terre», con musica, danza e tradizioni popolari. Si esibiscono il musicista Simone Pieramico e la Compagnia Tradizionale Val d'Abruzzo di Rosario, con la Familia Abruzzese di Rosario e Italia Tricolore Radio. Ingresso libero; si chiede di portare alimenti non deperibili per il Cottolengo Don Orione."
    }
   },
   {
-   "id": "obera-colectividad-italiana-nuova-commissione",
+   "id": "la-plata-festival-gastronomia-italiana",
    "topic": "comunita",
-   "source": "OberaOnline",
-   "place": "Oberá",
+   "source": "Canal 26",
+   "place": "La Plata",
    "country": "AR",
-   "kind": "comunita",
-   "date": "2026-11-20",
-   "url": "https://oberaonline.com.ar/2026/11/las-colectividades-italiana-y-japonesa-de-obera-renovaron-sus-comisiones-directivas/",
-   "area": "nea",
-   "title": {
-    "es": "Oberá: la Colectividad Italiana renueva su comisión directiva, con María Blanca Morchio como presidenta",
-    "it": "Oberá: la Colectividad Italiana rinnova il direttivo, María Blanca Morchio presidente"
-   },
-   "summary": {
-    "es": "La Colectividad Italiana de Oberá y Colonias, en Misiones, renovó su comisión directiva en la asamblea ordinaria del miércoles 18 de noviembre. La presidenta es María Blanca Morchio y la vicepresidenta, María Rosa Altieri; Karina Parola es secretaria y Gonzalo Rejala, tesorero. En la misma semana también la colectividad japonesa de la ciudad eligió nuevas autoridades.",
-    "it": "La Colectividad Italiana de Oberá y Colonias, nella provincia argentina di Misiones, ha rinnovato la commissione direttiva nell'assemblea ordinaria di mercoledì 18 novembre. Presidente è María Blanca Morchio, vicepresidente María Rosa Altieri; Karina Parola è segretaria e Gonzalo Rejala tesoriere. Nella stessa settimana anche la collettività giapponese della città ha eletto i nuovi vertici."
-   }
-  },
-  {
-   "id": "saladillo-sociedad-italiana-152-anni",
-   "topic": "comunita",
-   "source": "La Mañana (25 de Mayo)",
-   "place": "Saladillo",
-   "country": "AR",
-   "area": "bonaerense",
-   "kind": "comunita",
-   "date": "2026-11-17",
-   "url": "https://www.lamanana.com.ar/la-sociedad-italiana-celebro-152-anos-de-historia-y-arraigo/",
-   "title": {
-    "es": "Saladillo: la Sociedad Italiana celebró 152 años con un hermanamiento con Brienza",
-    "it": "Saladillo: la Sociedad Italiana festeggia 152 anni e un gemellaggio con Brienza"
-   },
-   "summary": {
-    "es": "La Sociedad Italiana de Saladillo, en la provincia de Buenos Aires, festejó su 152.º aniversario con los himnos de Italia y Argentina, una placa en homenaje a María Guillermina Saggión en el Teatro Marconi y el hermanamiento con Brienza, ciudad natal de José Antonio Rossi. También presentó el libro de actas fundacionales de la entidad.",
-    "it": "La Sociedad Italiana di Saladillo, in provincia di Buenos Aires, ha festeggiato i 152 anni con gli inni di Italia e Argentina, una targa in omaggio a María Guillermina Saggión al Teatro Marconi e il gemellaggio con Brienza, città natale di José Antonio Rossi. È stato presentato anche il libro dei verbali di fondazione dell'ente."
-   }
-  },
-  {
-   "id": "el-trebol-estrella-de-italia-132-anni",
-   "topic": "comunita",
-   "source": "Anyulin",
-   "place": "El Trébol",
-   "country": "AR",
-   "area": "centro",
    "kind": "comunita",
    "date": "2026-11-21",
-   "url": "https://anyulin.com.ar/132-anos-de-la-fundacion-de-la-sociedad-italiana-estrella-de-italia/",
+   "url": "https://www.canal26.com/turismo/2026/11/21/mas-de-200-platos-tipicos-de-italia-y-musica-en-vivo-el-festival-gastronomico-gratis-que-llega-a-buenos-aires-este-fin-de-semana-largo/",
+   "area": "bonaerense",
    "title": {
-    "es": "El Trébol: la Sociedad Italiana «Estrella de Italia» cumple 132 años",
-    "it": "El Trébol: la Sociedad Italiana «Estrella de Italia» compie 132 anni"
+    "es": "La Plata celebró el Festival de la Gastronomía Italiana en el fin de semana largo",
+    "it": "La Plata: il Festival della gastronomia italiana al Parco Alberti nel ponte festivo"
    },
    "summary": {
-    "es": "La Sociedad Italiana de Socorros Mutuos «Estrella de Italia», la institución más antigua de El Trébol (Santa Fe), recuerda su fundación el 19 de noviembre de 1894. Una nota adelantada del libro en preparación «El Trébol Gringo» repasa a sus fundadores, entre ellos su primer presidente, Giuseppe Grazioli, y los fines de ayuda mutua y de vínculo con Italia.",
-    "it": "La Sociedad Italiana de Socorros Mutuos «Estrella de Italia», l'istituzione più antica di El Trébol (Santa Fe), ricorda la fondazione del 19 novembre 1894. Un'anticipazione del libro in preparazione «El Trébol Gringo» ripercorre i fondatori, tra cui il primo presidente Giuseppe Grazioli, e gli scopi di mutuo soccorso e di legame con l'Italia."
+    "es": "La novena edición del Festival de la Gastronomía Italiana se realizó del 20 al 22 de noviembre en el Parque Alberti (25 y 38), con entrada libre y más de 80 puestos con especialidades regionales. El programa incluyó clases de cocina en vivo con el chef David «El Tano» Veltri, mercado de productores, música y danzas tradicionales, talleres de cerámica y sorteos de viajes.",
+    "it": "La nona edizione del Festival della gastronomia italiana si è svolta dal 20 al 22 novembre al Parco Alberti (25 e 38), con ingresso libero e oltre 80 stand di specialità regionali. Il programma comprendeva lezioni di cucina dal vivo con lo chef David «El Tano» Veltri, mercato dei produttori, musica e danze tradizionali, laboratori di ceramica e sorteggi di viaggi."
    }
   },
   {
-   "id": "made-in-italy-argentina-universita-bologna",
+   "id": "brandsen-sociedad-italiana-muestra-anual",
+   "topic": "cultura",
+   "source": "InfoBrandsen",
+   "place": "Brandsen",
+   "country": "AR",
+   "kind": "comunita",
+   "date": "2026-11-21",
+   "url": "https://www.infobrandsen.com.ar/2026/11/21/la-sociedad-italiana-presentara-su-muestra-anual-2026/",
+   "area": "bonaerense",
+   "title": {
+    "es": "Brandsen: la Sociedad Italiana presenta su muestra anual",
+    "it": "Brandsen: la Società italiana presenta la sua mostra annuale"
+   },
+   "summary": {
+    "es": "La Sociedad Italiana de Brandsen presenta su muestra anual el jueves 26 de noviembre a las 19, en el salón de planta alta de Sáenz Peña 676. Alumnos y docentes mostrarán los trabajos del año en distintas disciplinas artísticas. La entrada es libre y gratuita.",
+    "it": "La Società italiana di Brandsen presenta la sua mostra annuale giovedì 26 novembre alle 19, nel salone al piano superiore di Sáenz Peña 676. Allievi e docenti esporranno i lavori dell'anno in diverse discipline artistiche. L'ingresso è libero e gratuito."
+   }
+  },
+  {
+   "id": "rosario-comites-duplicados-horarios",
+   "topic": "politica",
+   "source": "La Rosca Electoral",
+   "place": "Rosario",
+   "country": "AR",
+   "kind": "comunita",
+   "date": "2026-11-19",
+   "url": "https://laroscaelectoral.com.ar/noticias/comites-rosario-duplicados-20-noviembre-horarios-2026",
+   "area": "centro",
+   "title": {
+    "es": "Comites Rosario: duplicados del sobre y horarios especiales hasta el 4 de diciembre",
+    "it": "Comites Rosario: duplicati del plico e orari speciali fino al 4 dicembre"
+   },
+   "summary": {
+    "es": "El Consulado de Rosario entrega duplicados a quienes no recibieron el sobre electoral desde el 20 de noviembre. Se piden con formulario y documento vigente, en persona, por correo o por e-mail. La atención es de lunes a viernes de 9 a 14 hasta el 3 de diciembre, el sábado 28 y domingo 29 de 10 a 13, y el 4 de diciembre de 9 a 16.",
+    "it": "Il Consolato di Rosario consegna i duplicati a chi non ha ricevuto il plico elettorale dal 20 novembre. Si chiedono con modulo e documento valido, di persona, per posta o via e-mail. Gli sportelli sono aperti dal lunedì al venerdì dalle 9 alle 14 fino al 3 dicembre, sabato 28 e domenica 29 dalle 10 alle 13, e il 4 dicembre dalle 9 alle 16."
+   }
+  },
+  {
+   "id": "cordoba-consulado-comites-duplicados",
+   "topic": "politica",
+   "source": "Consulado General de Italia en Córdoba",
+   "place": "Córdoba",
+   "country": "AR",
+   "kind": "istituzionale",
+   "date": "2026-11-19",
+   "url": "https://conscordoba.esteri.it/es/news/dal_consolato/2026/11/elecciones-com-it-es-2026-entrega-de-duplicados/",
+   "area": "centro",
+   "title": {
+    "es": "Córdoba: el consulado entrega duplicados para votar en el Comites",
+    "it": "Córdoba: il consolato consegna i duplicati per votare per il Comites"
+   },
+   "summary": {
+    "es": "Quienes pidieron votar en la circunscripción de Córdoba y no recibieron el sobre, o lo recibieron dañado, pueden solicitar un duplicado desde el 20 de noviembre. El pedido se hace por correo electrónico o PEC con copia del documento, o en persona en Vélez Sársfield 360, sin delegados. Se atiende de lunes a viernes de 9 a 13 y de 14 a 16, y el 28 y 29 de noviembre de 10 a 13.",
+    "it": "Chi ha chiesto di votare nella circoscrizione di Córdoba e non ha ricevuto il plico, o lo ha ricevuto danneggiato, può chiedere un duplicato dal 20 novembre. La richiesta si fa via e-mail o PEC con copia del documento, oppure di persona in Vélez Sársfield 360, senza delegati. Orari: dal lunedì al venerdì 9-13 e 14-16, e il 28 e 29 novembre dalle 10 alle 13."
+   }
+  },
+  {
+   "id": "parana-sociedad-italiana-donaciones-crecida",
+   "topic": "comunita",
+   "source": "Elonce",
+   "place": "Paraná",
+   "country": "AR",
+   "kind": "comunita",
+   "date": "2026-11-16",
+   "url": "https://www.elonce.com/parana/la-sociedad-italiana-recibe-donaciones-para-las-familias-afectadas-por-la-creciente-del-parana.htm",
+   "area": "nea",
+   "title": {
+    "es": "Paraná: la Sociedad Italiana recibe donaciones para los afectados por la crecida del río",
+    "it": "Paraná: la Società italiana raccoglie donazioni per le famiglie colpite dalla piena del fiume"
+   },
+   "summary": {
+    "es": "La Sociedad Italiana de Paraná abrió una campaña solidaria para las familias afectadas por la crecida del río Paraná, coordinada con la Municipalidad. Recibe alimentos no perecederos, leche, agua potable, artículos de higiene y lavandina en Monte Caseros 266, de lunes a viernes de 10 a 14; por ahora no recibe ropa. Su presidente, Horacio Piceda, indicó que seguirá mientras dure la emergencia.",
+    "it": "La Società italiana di Paraná ha avviato una campagna di solidarietà per le famiglie colpite dalla piena del fiume Paraná, in coordinamento con il Comune. Raccoglie alimenti non deperibili, latte, acqua potabile, prodotti per l'igiene e candeggina in Monte Caseros 266, dal lunedì al venerdì dalle 10 alle 14; per ora non accetta vestiti. Il presidente Horacio Piceda ha detto che proseguirà finché durerà l'emergenza."
+   }
+  },
+  {
+   "id": "mendoza-comites-voto-correo-sobres",
+   "topic": "politica",
+   "source": "El Monterizo",
+   "place": "Mendoza",
+   "country": "AR",
+   "kind": "comunita",
+   "date": "2026-11-18",
+   "url": "https://elmonterizo.com/los-italianos-de-mendoza-votan-por-correo-el-sobre-que-muchos-todavia-esperan-en-casa",
+   "area": "cuyo",
+   "title": {
+    "es": "Mendoza: los italianos votan por correo y algunos todavía esperan el sobre",
+    "it": "Mendoza: gli italiani votano per posta e alcuni aspettano ancora il plico"
+   },
+   "summary": {
+    "es": "En la circunscripción de Cuyo se eligen 12 miembros del Comites y compiten dos listas. Los votos deben llegar al consulado antes del 4 de diciembre y el escrutinio está previsto para el 5. No todos los inscriptos recibieron el sobre: la presidenta saliente, Marcela Penna, pidió a quienes no lo tengan solicitar un duplicado en la oficina del Comites en el consulado.",
+    "it": "Nella circoscrizione di Cuyo si eleggono 12 membri del Comites e corrono due liste. I voti devono arrivare al consolato entro il 4 dicembre e lo spoglio è previsto il 5. Non tutti gli iscritti hanno ricevuto il plico: la presidente uscente, Marcela Penna, ha invitato chi non l'ha ricevuto a chiedere un duplicato all'ufficio del Comites presso il consolato."
+   }
+  },
+  {
+   "id": "villa-de-merlo-festival-gastronomia-italiana-2027",
    "topic": "economia",
-   "source": "ANSA Latina",
-   "place": "Buenos Aires",
+   "source": "AISE – Agenzia Internazionale Stampa Estero",
+   "place": "Villa de Merlo",
    "country": "AR",
    "kind": "agenzia",
-   "date": "2026-11-19",
-   "url": "https://www.ansalatina.com/americalatina/noticia/politica/2026/11/19/lideres-y-expertos-analizan-gestion-empresarial-del-made-in-italy-en-argentina_1e3e8eb8-5c52-4a99-8717-4ae0ced25b28.html",
-   "area": "amba",
+   "date": "2026-11-16",
+   "url": "https://www.aise.it/made-in-italy/argentina-cptcia-allexpo-alberghiera-e-gastronomica-in-vista-del-1-festival-della-gastronomia-italiana-di-villa-de-merlo/239550/1",
+   "area": "cuyo",
    "title": {
-    "es": "Buenos Aires: la Universidad de Bolonia analiza cómo vender el Made in Italy en Argentina",
-    "it": "Buenos Aires: l'Università di Bologna discute come vendere il Made in Italy in Argentina"
+    "es": "Villa de Merlo prepara su primer Festival de la Gastronomía Italiana para abril de 2027",
+    "it": "Villa de Merlo prepara il suo primo Festival della gastronomia italiana per aprile 2027"
    },
    "summary": {
-    "es": "En el marco de la Semana de la cocina italiana, la sede de Buenos Aires de la Universidad de Bolonia organizó la conferencia pública «De la marca al mercado». Empresarios y especialistas en consumo debatieron sobre selección de productos, importadores, distribuidores y canales de venta de las marcas italianas en Argentina. También se presentó la edición 2027 del máster en Business Management Europa-Latam, que comienza en marzo.",
-    "it": "Nell'ambito della Settimana della cucina italiana, la sede di Buenos Aires dell'Università di Bologna ha organizzato la conferenza pubblica «De la marca al mercado». Imprenditori ed esperti di consumo hanno discusso selezione dei prodotti, importatori, distributori e canali di vendita dei marchi italiani in Argentina. È stata presentata anche l'edizione 2027 del master in Business Management Europa-Latam, al via a marzo."
+    "es": "Nicolás Moretti, presidente del Corredor Turístico, Productivo y Cultural Italia-Argentina (CPTCIA), visitó la Expo Hotelera y Gastronómica de Villa de Merlo, en San Luis, para iniciar la organización del primer Festival de la Gastronomía Italiana local, previsto para el 24 y 25 de abril de 2027. En el acto estuvieron el ministro de Turismo y Cultura, José Picco, y el intendente Juan Álvarez Pinto.",
+    "it": "Nicolás Moretti, presidente del Corridoio turistico, produttivo e culturale Italia-Argentina (CPTCIA), ha visitato l'Expo alberghiera e gastronomica di Villa de Merlo, nella provincia di San Luis, per avviare l'organizzazione del primo Festival della gastronomia italiana locale, previsto il 24 e 25 aprile 2027. Alla cerimonia erano presenti il ministro del Turismo e della Cultura José Picco e il sindaco Juan Álvarez Pinto."
    }
   },
   {
-   "id": "uil-bombardieri-buenos-aires",
-   "topic": "societa",
-   "source": "Inform",
+   "id": "tucuman-embajada-italia-cooperacion-industrial",
+   "topic": "economia",
+   "source": "Comunicación Tucumán",
+   "place": "San Miguel de Tucumán",
+   "country": "AR",
+   "kind": "istituzionale",
+   "date": "2026-11-17",
+   "url": "https://www.comunicaciontucuman.gob.ar/noticia/economia-produccion/244349/tucuman-embajada-italia-avanzan-agenda-cooperacion-industrial",
+   "area": "noa",
+   "title": {
+    "es": "Tucumán: la Unión Industrial y la Embajada de Italia hablan de maquinaria y crédito",
+    "it": "Tucumán: Unione industriale e Ambasciata d'Italia parlano di macchinari e credito"
+   },
+   "summary": {
+    "es": "El embajador Fabrizio Nicoletti se reunió con la Unión Industrial de Tucumán, con la participación de la secretaria de Relaciones Internacionales, María Virginia Ávila. Se habló de tecnología, maquinaria y equipamiento industrial, líneas de crédito italianas, capacitación e innovación. El embajador invitó a los industriales al Segundo Foro Empresarial de la Unión Europea, el 30 de noviembre y el 1 de diciembre en Buenos Aires.",
+    "it": "L'ambasciatore Fabrizio Nicoletti ha incontrato l'Unione industriale di Tucumán, con la partecipazione della segretaria alle Relazioni internazionali María Virginia Ávila. Si è parlato di tecnologia, macchinari e impianti industriali, linee di credito italiane, formazione e innovazione. L'ambasciatore ha invitato gli industriali al Secondo Forum imprenditoriale dell'Unione Europea, il 30 novembre e il 1° dicembre a Buenos Aires."
+   }
+  },
+  {
+   "id": "trelew-asociacion-italiana-asamblea",
+   "topic": "comunita",
+   "source": "El Chubut",
+   "place": "Trelew",
+   "country": "AR",
+   "kind": "comunita",
+   "date": "2026-11-16",
+   "url": "https://www.elchubut.com.ar/regionales/2026-11-16-20-38-0-la-provincia-convoco-de-oficio-a-una-nueva-asamblea-de-la-asociacion-italiana-de-trelew",
+   "area": "patagonia",
+   "title": {
+    "es": "Trelew: la Provincia convoca una nueva asamblea de la Asociación Italiana para el 30 de noviembre",
+    "it": "Trelew: la Provincia convoca una nuova assemblea dell'Associazione italiana per il 30 novembre"
+   },
+   "summary": {
+    "es": "El Gobierno del Chubut convocó de oficio la asamblea ordinaria de la Asociación Italiana de Socorros Mutuos «Paz y Patria» para el lunes 30 de noviembre a las 19, en Pasaje Mendoza 137. La asamblea de junio había sido suspendida por la Justicia tras amparos sobre el padrón. Seguirán oficializadas las listas Naranja y Tricolore; el orden del día incluye memorias y balances 2024 y 2025.",
+    "it": "Il governo del Chubut ha convocato d'ufficio l'assemblea ordinaria dell'Associazione italiana di mutuo soccorso «Paz y Patria» per lunedì 30 novembre alle 19, in Pasaje Mendoza 137. L'assemblea di giugno era stata sospesa dalla magistratura dopo ricorsi sull'elenco dei soci. Restano ufficiali le liste Naranja e Tricolore; all'ordine del giorno relazioni e bilanci 2024 e 2025."
+   }
+  },
+  {
+   "id": "eni-ypf-gnl-aprobacion-inversion",
+   "topic": "economia",
+   "source": "ANSA – America Latina",
    "place": "Buenos Aires",
    "country": "AR",
    "kind": "agenzia",
    "date": "2026-11-20",
-   "url": "https://comunicazioneinform.it/il-segretario-generale-uil-bombardieri-in-argentina-incontri-con-le-istituzioni-e-con-rappresentanti-sindacali/",
-   "area": "amba",
+   "url": "https://www.ansa.it/sito/notizie/mondo/americalatina/2026/11/20/largentina-approva-il-maxi-investimento-sul-gnl-di-eni-ypf-e-xrg_3f88f05d-a87c-4f54-90a7-4176495b1ea4.html",
+   "area": "nacional",
    "title": {
-    "es": "Buenos Aires: el secretario de la Uil Bombardieri se reúne con embajada, consulado y sindicatos",
-    "it": "Buenos Aires: il segretario della Uil Bombardieri incontra ambasciata, consolato e sindacati"
+    "es": "El Gobierno aprobó el proyecto de GNL de la italiana Eni con YPF y XRG",
+    "it": "L'Argentina approva il progetto di GNL dell'italiana Eni con YPF e XRG"
    },
    "summary": {
-    "es": "El secretario general de la Uil, Pierpaolo Bombardieri, está en Argentina para reunirse con instituciones y representantes sindicales. En la embajada vio al embajador Fabrizio Nicoletti y conversó con la cónsul general Elisabetta Holsztejn Tarczewski, recién llegada al cargo. Con el presidente de Ital Uil, Giuliano Zignani, confirmó el apoyo de la red de oficinas del patronato.",
-    "it": "Il segretario generale della Uil Pierpaolo Bombardieri è in Argentina per incontri con istituzioni e rappresentanti sindacali. All'ambasciata ha visto l'ambasciatore Fabrizio Nicoletti e ha parlato con la console generale Elisabetta Holsztejn Tarczewski, da poco in carica. Con il presidente dell'Ital Uil Giuliano Zignani ha confermato il sostegno della rete di uffici del patronato."
+    "es": "El Gobierno argentino aprobó el proyecto de exportación de gas natural licuado de Eni, YPF y la emiratí XRG, según anunció el ministro de Economía, Luis Caputo. Prevé 25.000 millones de dólares de inversión entre 2027 y 2030 y exportaciones de 12 millones de toneladas anuales. Fuentes de las empresas indicaron a ANSA que la decisión final de inversión se firmará el 30 de noviembre en Buenos Aires.",
+    "it": "Il governo argentino ha approvato il progetto di esportazione di gas naturale liquefatto di Eni, YPF e dell'emiratina XRG, come annunciato dal ministro dell'Economia Luis Caputo. Prevede 25 miliardi di dollari di investimenti fra il 2027 e il 2030 ed esportazioni per 12 milioni di tonnellate l'anno. Fonti delle aziende hanno detto all'ANSA che la decisione finale di investimento sarà firmata il 30 novembre a Buenos Aires."
+   }
+  },
+  {
+   "id": "ciudadania-tramites-exterior-roma-2029",
+   "topic": "cittadinanza",
+   "source": "El Observador",
+   "place": "Roma",
+   "country": "IT",
+   "kind": "comunita",
+   "date": "2026-11-18",
+   "url": "https://www.elobservador.com.uy/lifestyle/ciudadania-italiana-descendencia-cambian-los-tramites-iniciados-el-exterior-n6064302",
+   "area": "italia",
+   "title": {
+    "es": "Ciudadanía por descendencia: desde 2029 los trámites del exterior pasarán a una oficina en Roma",
+    "it": "Cittadinanza per discendenza: dal 2029 le pratiche dall'estero passeranno a un ufficio a Roma"
+   },
+   "summary": {
+    "es": "Según la Ley 11/2026, desde el 1 de enero de 2029 los mayores de edad residentes en el exterior deberán enviar por correo postal su solicitud de reconocimiento a una oficina del Ministerio de Asuntos Exteriores en Roma. Hasta el 31 de diciembre de 2028 los consulados siguen recibiendo carpetas, con cupos anuales. Los trámites de menores quedan en los consulados y los requisitos no cambian.",
+    "it": "Secondo la legge 11/2026, dal 1° gennaio 2029 i maggiorenni residenti all'estero dovranno inviare per posta la domanda di riconoscimento a un ufficio del Ministero degli Esteri a Roma. Fino al 31 dicembre 2028 i consolati continuano a ricevere le pratiche, con quote annuali. Le pratiche dei minori restano ai consolati e i requisiti non cambiano."
    }
   }
  ]
